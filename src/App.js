@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
+import Portfolio from './Portfolio';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <h1>Front-End Developer</h1>
+          <Portfolio />
         </header>
-        <footer>GitHub</footer>
+      
       </div>
     </div>
   );
