@@ -8,7 +8,7 @@ export default function About() {
         <p>
           I learned to code with&nbsp;
           <a
-            href="https://www.shecodes.io/"
+            href="https://www.shecodes.io/graduates/14434-ilze-rieba"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -36,10 +36,10 @@ export default function About() {
           <br />
           When I don’t code, I am learning illustration and digital animation,
           surf, draw, read books, play beach volleyball, practice yoga and work
-          as a part-time Fundraising and Operations Manager for a small arts and education
-          charity based in London. I have 15+ years of experience setting up and
-          running operational processes in small organisations, delivering
-          complex projects and managing events.
+          as a part-time Fundraising and Operations Manager for a small arts and
+          education charity based in London. I have 15+ years of experience
+          setting up and running operational processes in small organisations,
+          delivering complex projects and managing events.
         </p>
       </div>
     </div>
