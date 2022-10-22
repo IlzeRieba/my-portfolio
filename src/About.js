@@ -36,7 +36,7 @@ export default function About() {
           . I am also a newbie to illustration and animation. You can see some
           of my work here.
           <br />
-          When I don’t code, I work as a Furndraising and Operations Manager for
+          When I don’t code, I work as a Fundraising and Operations Manager for
           a small arts charity based in London. I have 15+ years of experience
           delivering complex projects.
         </p>
