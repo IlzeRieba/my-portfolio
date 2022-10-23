@@ -4,13 +4,13 @@ import HeroTitle from "./HeroTitle";
 import Work from "./Work";
 import Header from "./Header";
 import "bootstrap/dist/css/bootstrap.css";
+import "./Portfolio.css";
 
 
 
 export default function Portfolio() {
     return (
-      <div>
-        <h1>This is a work in progress, come back again!</h1>
+      <div className="Portfolio">
        <Header/> 
         <HeroTitle />
         <Work />

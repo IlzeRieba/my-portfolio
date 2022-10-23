@@ -1,0 +1,27 @@
+.Portfolio h1 {
+font-size: 136px;
+font-family: 'M PLUS 1', sans-serif;
+text-transform: capitalize;
+font-weight: bold;
+line-height: 55pt;
+letter-spacing: 5px;
+text-transform: uppercase;
+
+}
+
+.Portfolio h2 {
+font-size: 84px;
+font-family: 'M PLUS 1', sans-serif;
+text-transform: capitalize;
+font-weight: bold;
+letter-spacing: 8px;
+text-transform: uppercase;
+line-height: 55pt;
+}
+
+.Portfolio small {
+font-size: 24px;
+font-family: 'M PLUS 1', sans-serif;
+color: rgb(189, 184, 184);
+font-style: italic;
+}
