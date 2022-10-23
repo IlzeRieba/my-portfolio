@@ -5,6 +5,10 @@ export default function Work() {
     <div className="WorkContainer mt-7">
       <h4>selected work</h4>
       <h4>skills</h4>
+
+      <p className="mt-3">
+        coming soon...
+      </p>
     </div>
   );
 }
