@@ -1,15 +1,16 @@
 import React from "react";
 
 
+
 export default function Footer() {
   return (
     <div className="FooterContainer mt-7 mb-5 grow">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3">
             <h3> Get in touch </h3>
           </div>
-          <div class="col-2">
+          <div class="col-lg-1">
             <p>
               <a
                 href="https://github.com/IlzeRieba"
@@ -20,7 +21,7 @@ export default function Footer() {
               </a>
             </p>
           </div>
-          <div class="col-2">
+          <div class="col-lg-1">
             <p>
               <a
                 href="https://uk.linkedin.com/in/ilze-rieba-58492521"
@@ -31,7 +32,7 @@ export default function Footer() {
               </a>
             </p>
           </div>
-          <div class="col-2">
+          <div class="col-1">
             <p>
               <a
                 href="mailto:rieba.ilze@gmail.com"
