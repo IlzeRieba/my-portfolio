@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="FooterContainer mt-6 mb-5 grow">
+    <div className="FooterContainer mt-7 mb-5 grow">
       <div class="container">
         <div class="row">
           <div class="col-3">
