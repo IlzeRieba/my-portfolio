@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeroTitle() {
   return (
-    <div className="HeroContainer pt-6">
+    <div className="HeroContainer mt-6">
       <div className="HeroContent">
         <small>junior</small>
         <h2>Front-end</h2>

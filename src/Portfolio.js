@@ -3,6 +3,7 @@ import About from "./About";
 import HeroTitle from "./HeroTitle";
 import Work from "./Work";
 import Header from "./Header";
+import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Portfolio.css";
 
@@ -15,6 +16,7 @@ export default function Portfolio() {
         <HeroTitle />
         <Work />
         <About /> 
+        <Footer /> 
       </div>
     );
      

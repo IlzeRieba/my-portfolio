@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Work() {
   return (
-    <div>
-      <h4>test</h4>
-      <h4>test</h4>
+    <div className="WorkContainer mt-7">
+      <h4>selected work</h4>
+      <h4>skills</h4>
     </div>
   );
 }

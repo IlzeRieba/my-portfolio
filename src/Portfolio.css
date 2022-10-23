@@ -17,6 +17,28 @@ font-weight: bold;
 letter-spacing: 8px;
 text-transform: uppercase;
 line-height: 55pt;
+padding-left: 5px;
+}
+
+.Portfolio h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+color: black;
+  font-family: 'M PLUS 1', sans-serif;
+}
+
+p {
+    color: rgb(145, 141, 141);
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.Portfolio h4 {
+   font-family: 'M PLUS 1', sans-serif;
+text-transform: small-caps;
+font-size: 18px;
+color: rgb(145, 141, 141);
+font-weight: lighter;
 }
 
 .Portfolio small {
@@ -24,4 +46,27 @@ font-size: 24px;
 font-family: 'M PLUS 1', sans-serif;
 color: rgb(189, 184, 184);
 font-style: italic;
+padding-left: 5px;
+}
+
+
+.mt-6 {
+    margin-top: 25rem;
+}
+
+.mt-7 {
+    margin-top: 10rem;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
