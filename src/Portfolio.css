@@ -28,17 +28,28 @@ color: black;
 }
 
 p {
-    color: rgb(145, 141, 141);
+    color: rgb(65, 65, 65);
   font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
 
 }
 
 .Portfolio h4 {
    font-family: 'M PLUS 1', sans-serif;
 text-transform: small-caps;
-font-size: 18px;
+font-size: 20px;
 color: rgb(145, 141, 141);
 font-weight: lighter;
+}
+
+.Portfolio h5 {
+   font-family: 'M PLUS 1', sans-serif;
+text-transform: uppercase;
+font-size: 36px;
+color: rgb(0, 0, 0);
+font-weight: lighter;
+letter-spacing: 3px;
 }
 
 .Portfolio small {
@@ -47,7 +58,9 @@ font-family: 'M PLUS 1', sans-serif;
 color: rgb(189, 184, 184);
 font-style: italic;
 padding-left: 5px;
+font-weight: lighter;
 }
+
 
 
 .mt-6 {
@@ -59,16 +72,25 @@ padding-left: 5px;
 }
 
 
-a {
- 
- color: rgb(0, 0, 0);
+.projectYear {
+text-align: right;
+color: black;
+font-size: 42px;
 }
 
+
+a {
+ text-decoration: none;
+ color: rgba(0, 0, 0, 0.699);
+ font-weight: 700;
+}
 a:visited {
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
+  color:grey;
+  font-weight: lighter;
   
 }

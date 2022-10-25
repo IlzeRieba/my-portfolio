@@ -18,8 +18,8 @@ export default function About() {
                 >
                   SheCodes
                 </a>
-                &nbsp;(HTML, CSS, JavaScript, React.js). I continue learning as
-                Junior Front-End Developer Intern at&nbsp;
+                &nbsp;( HTML, CSS, JavaScript, React.js). I
+                continue learning as Junior Front-End Developer Intern at&nbsp;
                 <a
                   href="https://www.coworksurf.com/"
                   target="_blank"
@@ -27,7 +27,7 @@ export default function About() {
                 >
                   Coworksurf
                 </a>
-                . I love to design and create websites and work on coding 
+                . I love to design and create websites and work on coding
                 projects with the{" "}
                 <a
                   href="https://theproudbanana.com/"
