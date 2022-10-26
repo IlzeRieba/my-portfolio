@@ -7,7 +7,7 @@ export default function About() {
         <div class="row">
           <div class="col-6"></div>
           <div class="col-6">
-            <h3>About me </h3>
+            <h3 id="about-me-section">About me </h3>
             <div class="mt-4">
               <p>
                 I learned to code with&nbsp;

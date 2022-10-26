@@ -61,6 +61,21 @@ padding-left: 5px;
 font-weight: lighter;
 }
 
+a {
+ text-decoration: none;
+ color: rgba(0, 0, 0, 0.699);
+ font-weight: 700;
+}
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color:grey;
+  font-weight: lighter;
+  
+}
 
 
 .mt-6 {
@@ -78,19 +93,19 @@ color: black;
 font-size: 42px;
 }
 
-
-a {
- text-decoration: none;
- color: rgba(0, 0, 0, 0.699);
- font-weight: 700;
-}
-a:visited {
-  text-decoration: none;
+.nav-link {
+  font-family: 'M PLUS 1', sans-serif;
+text-transform: small-caps;
+font-size: 20px;
+color: rgb(145, 141, 141);
+font-weight: lighter;
 }
 
-a:hover {
-  text-decoration: none;
-  color:grey;
-  font-weight: lighter;
-  
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 4px;
+  text-transform: uppercase;
+
 }
+
