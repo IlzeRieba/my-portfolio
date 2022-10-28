@@ -5,8 +5,8 @@ export default function About() {
     <div className="AboutContainer mt-6">
       <div class="container">
         <div class="row">
-          <div class="col-6"></div>
-          <div class="col-6">
+          <div class="col-lg-6"></div>
+          <div class="col-lg-6">
             <h3 id="about-me-section">About me </h3>
             <div class="mt-4">
               <p>
