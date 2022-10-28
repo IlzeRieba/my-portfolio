@@ -86,8 +86,8 @@ font-weight: lighter;
 
 a {
  text-decoration: none;
- color: var(--hyperlink-color);
  font-weight: 700;
+ color: var(--hyperlink-color);
 }
 a:visited {
   text-decoration: none;
