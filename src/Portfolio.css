@@ -5,7 +5,7 @@
 --text-paragraph-color:rgb(65, 65, 65);
 --heading-color-light:rgb(145, 141, 141);
 --heading-color-darker: rgb(65, 65, 65);
---hyperlink-color:  color: rgba(0, 0, 0, 0.699);
+--hyperlink-color: rgba(0, 0, 0, 0.699);
 --hyperlink-hover-color: grey;
 --font-main: 'M PLUS 1', sans-serif;; 
 --font-headings: 'Montserrat', sans-serif;; 
@@ -87,7 +87,7 @@ font-weight: lighter;
 a {
  text-decoration: none;
  font-weight: 700;
- color: var(--hyperlink-color);
+ color: rgba(0, 0, 0, 0.699);
 }
 a:visited {
   text-decoration: none;
