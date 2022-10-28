@@ -10,7 +10,7 @@ export default function Footer() {
           <div class="col-md-3">
             <h4 id="get-in-touch"> get in touch </h4>
           </div>
-          <div class="col-md-2">
+          <div class="col-2">
             <a
               href="https://github.com/IlzeRieba"
               target="_blank"
@@ -20,7 +20,7 @@ export default function Footer() {
               GitHub
             </a>
           </div>
-          <div class="col-md-2">
+          <div class="col-2">
             <a
               href="https://uk.linkedin.com/in/ilze-rieba-58492521"
               target="_blank"
@@ -30,7 +30,7 @@ export default function Footer() {
               LinkedIn
             </a>
           </div>
-          <div class="col-md-2">
+          <div class="col-2">
             <a
               href="mailto:rieba.ilze@gmail.com"
               target="_blank"
