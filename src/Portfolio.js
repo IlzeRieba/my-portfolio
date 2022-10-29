@@ -6,12 +6,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Portfolio.css";
+import AnimCursor from "./components/AnimCursor";
 
 
 
 export default function Portfolio() {
     return (
       <div className="Portfolio">
+       <AnimCursor />
        <Header/> 
         <HeroTitle />
         <Work />

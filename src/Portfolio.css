@@ -8,7 +8,8 @@
 --hyperlink-color: rgba(0, 0, 0, 0.699);
 --hyperlink-hover-color: grey;
 --font-main: 'M PLUS 1', sans-serif;; 
---font-headings: 'Montserrat', sans-serif;; 
+--font-headings: 'Montserrat', sans-serif;
+--cursor-color:  black;
 }
  
 
@@ -138,7 +139,7 @@ font-size: 42px;
 
 @media (max-width: 900px) {
   .Portfolio h1 {
- font-size: 72px;
+ font-size: 54px;
 line-height: 45pt;
 letter-spacing: 2px;
 text-transform: uppercase;
