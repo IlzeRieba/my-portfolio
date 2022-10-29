@@ -15,15 +15,17 @@ export default function About() {
                   href="https://www.shecodes.io/graduates/14434-ilze-rieba"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="SheCodes Website"
                 >
                   SheCodes
                 </a>
-                &nbsp;( HTML, CSS, JavaScript, React.js). I
-                continue learning as Junior Front-End Developer Intern at&nbsp;
+                &nbsp;( HTML, CSS, JavaScript, React.js). I continue learning as
+                Junior Front-End Developer Intern at&nbsp;
                 <a
                   href="https://www.coworksurf.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Coworksurf Website"
                 >
                   Coworksurf
                 </a>
@@ -33,6 +35,7 @@ export default function About() {
                   href="https://theproudbanana.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="ProudBanana Website"
                 >
                   Proud Banana
                 </a>

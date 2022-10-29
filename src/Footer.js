@@ -16,6 +16,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               class="contactLink"
+              title="GitHub"
             >
               GitHub
             </a>
@@ -26,6 +27,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               class="contactLink"
+              title="LinkedIn"
             >
               LinkedIn
             </a>
@@ -36,6 +38,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               class="contactLink"
+              title="rieba.ilze@gmail.com"
             >
               Email
             </a>
