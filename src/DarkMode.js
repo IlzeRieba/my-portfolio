@@ -1,7 +1,6 @@
 import React from "react";
 import "./DarkMode.css";
-
-
+import "./Portfolio.css";
 
 const DarkMode = () => {
   let clickedClass = "clicked";
@@ -44,3 +43,4 @@ const DarkMode = () => {
 };
 
 export default DarkMode;
+

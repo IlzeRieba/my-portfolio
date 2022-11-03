@@ -16,7 +16,7 @@ a:link, a:visited, a:hover, a:active{
     text-decoration: none;
 }
 
-.Portfolio h1 {
+.Portfolio h1{
 font-size: 136px;
 font-family: var(--font-main);
 color: var(--primary-colour-black);
@@ -26,6 +26,7 @@ line-height: 55pt;
 letter-spacing: 5px;
 text-transform: uppercase;
 }
+
 
 .Portfolio h2 {
 font-size: 84px;
@@ -168,7 +169,7 @@ font-size: 42px;
 }
 
 .DarkModeIcon {
-padding: 0 100px;
+padding: 30px 10px 30px 30px;
 }
 
 @media (max-width: 900px) {

@@ -12,11 +12,9 @@ export default function Footer() {
           </div>
           <div class="col-2">
             <a
-              href="mailto:rieba.ilze@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               class="contactLink"
-              title="LinkedIn"
             >
               Email
             </a>

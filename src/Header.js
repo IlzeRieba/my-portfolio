@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import DarkMode from "./components/DarkMode";
+import DarkMode from "./DarkMode";
 
 
 export default function Header() {
@@ -10,9 +10,6 @@ export default function Header() {
       <div>
         <Navbar expand="lg mt-3">
           <Container fluid>
-            <span class="DarkModeIcon">
-              <DarkMode />{" "}
-            </span>
             <Navbar.Brand href="#">Ilze Rieba</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -25,6 +22,9 @@ export default function Header() {
                 <Nav.Link href="#get-in-touch">contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
+            <span class="DarkModeIcon">
+              <DarkMode />{" "}
+            </span>
           </Container>
         </Navbar>
       </div>

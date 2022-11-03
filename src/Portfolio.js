@@ -13,14 +13,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Portfolio() {
     return (
       <div className="Portfolio">
-        <AnimCursor />
        
-        <Header />
+          <AnimCursor />
 
-        <HeroTitle />
-        <Work />
-        <About />
-        <Footer />
+          <Header />
+
+          <HeroTitle />
+          <Work />
+          <About />
+          <Footer />
+       
       </div>
     );
      
