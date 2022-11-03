@@ -13,13 +13,11 @@
 #darkMode:focus {
   filter: none;
   background-color: black;
-  color: white;
 
 }
 
 #darkMode.clicked {
   filter: none !important;
   background-color: black;
-    color: white;
 }
 

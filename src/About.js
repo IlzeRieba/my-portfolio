@@ -45,7 +45,7 @@ export default function About() {
                 When I don’t code, I am learning illustration and digital
                 animation, surf, draw, read books, play beach volleyball,
                 practice yoga and work as a part-time Fundraising and Operations
-                Manager for the &nbsp;
+                Manager at the &nbsp;
                 <a
                   href="https://www.stuarthallfoundation.org/"
                   target="_blank"
