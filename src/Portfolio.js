@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import "./Portfolio.css";
 import AnimCursor from "./components/AnimCursor";
 import "bootstrap/dist/css/bootstrap.min.css";
-import DarkMode from "./components/DarkMode";
+
 
 
 export default function Portfolio() {
