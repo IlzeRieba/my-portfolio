@@ -15,17 +15,17 @@ export default function About() {
                   href="https://www.shecodes.io/graduates/14434-ilze-rieba"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="SheCodes Website"
+                  class="textLink"
                 >
                   SheCodes
                 </a>
                 &nbsp;( HTML, CSS, JavaScript, React.js). I continue learning as
-                Junior Front-End Developer Intern at&nbsp;
+                Junior Front-End Developement Intern at&nbsp;
                 <a
                   href="https://www.coworksurf.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                
+                  class="textLink"
                 >
                   Coworksurf
                 </a>
@@ -35,7 +35,7 @@ export default function About() {
                   href="https://theproudbanana.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="ProudBanana Website"
+                  class="textLink"
                 >
                   Proud Banana
                 </a>
@@ -45,7 +45,15 @@ export default function About() {
                 When I don’t code, I am learning illustration and digital
                 animation, surf, draw, read books, play beach volleyball,
                 practice yoga and work as a part-time Fundraising and Operations
-                Manager for a small arts and education charity based in London.
+                Manager for the &nbsp;
+                <a
+                  href="https://www.stuarthallfoundation.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="textLink"
+                >
+                  Stuart Hall Foundation.
+                </a>
               </p>
 
               <p>

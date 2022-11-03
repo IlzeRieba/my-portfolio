@@ -12,7 +12,9 @@
 --cursor-color:  black;
 }
  
-
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+}
 
 .Portfolio h1 {
 font-size: 136px;
@@ -28,6 +30,7 @@ text-transform: uppercase;
 .Portfolio h2 {
 font-size: 84px;
 font-family: var(--font-main);
+color: var(--primary-colour-black);
 text-transform: capitalize;
 font-weight: bold;
 letter-spacing: 8px;
@@ -61,12 +64,13 @@ font-weight: lighter;
 }
 
 .Portfolio h5 {
-   font-family: var(--font-main);
+   font-family: var(--font-headings);
 text-transform: uppercase;
 font-size: 36px;
 color: var(--primary-colour-black);
 font-weight: lighter;
 letter-spacing: 3px;
+text-decoration: none;
 }
 
 .Portfolio small {
@@ -78,18 +82,13 @@ padding-left: 5px;
 font-weight: lighter;
 }
 
-.contactLink {
-    color: var(--text-paragraph-color);
-  font-family: var(--font-headings);
-  font-weight: 500px;
-  font-size: 14px;
-}
 
 a {
  text-decoration: none;
  font-weight: 700;
  color: rgba(0, 0, 0, 0.699);
 }
+
 a:visited {
   text-decoration: none;
 }
@@ -98,9 +97,11 @@ a:hover {
   text-decoration: none;
   color:var(--hyperlink-hover-color);
   font-weight: lighter;
-  
 }
 
+a:active {
+  text-decoration: none;
+}
 
 .mt-6 {
     margin-top: 20rem;
@@ -110,6 +111,9 @@ a:hover {
     margin-top: 10rem;
 }
 
+.ProjectName {
+  text-decoration: none;
+}
 
 .projectYear {
 text-align: right;
@@ -118,10 +122,11 @@ font-size: 42px;
 }
 
 .nav-link {
- font-family: var(--font-headings);
   margin-top: 4px;
   text-transform: small-caps;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  margin-left: 50px;
 }
 
 
@@ -129,7 +134,6 @@ font-size: 42px;
   font-family: var(--font-headings);
   margin-top: 4px;
   text-transform: uppercase;
-
 }
 
 .nav-item {
@@ -137,11 +141,41 @@ font-size: 42px;
 
 }
 
+.contactLink {
+  text-decoration: none;
+    color: var(--text-paragraph-color);
+    
+  font-family: var(--font-headings);
+  font-weight: 500px;
+  font-size: 14px;
+}
+
+.textLink {
+   text-decoration: none;
+ font-weight: 500;
+ color: rgba(0, 0, 0, 0.699);
+}
+
+.textLink:hover {
+   text-decoration: none;
+  color:var(--hyperlink-hover-color);
+  font-weight: lighter;
+}
+
+.contactLink:hover {
+  text-decoration: none;
+  color:var(--hyperlink-hover-color);
+}
+
+.DarkModeIcon {
+padding: 0 100px;
+}
+
 @media (max-width: 900px) {
   .Portfolio h1 {
- font-size: 72px;
+ font-size: 64px;
 line-height: 45pt;
-letter-spacing: 2px;
+letter-spacing: 1px;
 text-transform: uppercase;
   }
 

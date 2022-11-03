@@ -4,21 +4,23 @@ import HeroTitle from "./HeroTitle";
 import Work from "./Work";
 import Header from "./Header";
 import Footer from "./Footer";
-import "bootstrap/dist/css/bootstrap.css";
 import "./Portfolio.css";
 import AnimCursor from "./components/AnimCursor";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import DarkMode from "./components/DarkMode";
 
 
 export default function Portfolio() {
     return (
       <div className="Portfolio">
-       <AnimCursor />
-       <Header/> 
+        <AnimCursor />
+       
+        <Header />
+
         <HeroTitle />
         <Work />
-        <About /> 
-        <Footer /> 
+        <About />
+        <Footer />
       </div>
     );
      

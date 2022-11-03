@@ -7,7 +7,7 @@ export default function Footer() {
     <div className="FooterContainer mt-7 mb-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-4">
             <h4 id="get-in-touch"> get in touch </h4>
           </div>
           <div class="col-2">
