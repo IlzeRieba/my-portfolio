@@ -10,13 +10,15 @@ export default function Header() {
       <div>
         <Navbar expand="lg mt-3">
           <Container fluid>
+            <span class="DarkModeIcon">
+              <DarkMode />{" "}
+            </span>
             <Navbar.Brand href="#">Ilze Rieba</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: "100px" }}
-             
               >
                 <Nav.Link href="#about-me-section">about</Nav.Link>
                 <Nav.Link href="#my-work">my work</Nav.Link>
