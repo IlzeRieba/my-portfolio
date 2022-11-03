@@ -7,9 +7,21 @@ export default function Footer() {
     <div className="FooterContainer mt-7 mb-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <h4 id="get-in-touch"> get in touch </h4>
           </div>
+          <div class="col-2">
+            <a
+              href="mailto:rieba.ilze@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contactLink"
+              title="LinkedIn"
+            >
+              Email
+            </a>
+          </div>
+
           <div class="col-2">
             <a
               href="https://github.com/IlzeRieba"
@@ -32,18 +44,9 @@ export default function Footer() {
               LinkedIn
             </a>
           </div>
-          <div class="col-2">
-            <a
-              href="mailto:rieba.ilze@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contactLink"
-              title="rieba.ilze@gmail.com"
-            >
-              Email
-            </a>
-          </div>
         </div>
+
+       
       </div>
     </div>
   );

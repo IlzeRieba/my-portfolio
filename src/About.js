@@ -25,7 +25,7 @@ export default function About() {
                   href="https://www.coworksurf.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="Coworksurf Website"
+                
                 >
                   Coworksurf
                 </a>
