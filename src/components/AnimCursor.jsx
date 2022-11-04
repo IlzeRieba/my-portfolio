@@ -5,7 +5,7 @@ export default function AnimCursor() {
     return (
       <AnimatedCursor
         innerSize={10}
-        outerSize={10}
+        outerSize={13}
         color="145, 141, 141"
         outerAlpha={0.2}
         innerScale={0.7}

@@ -4,11 +4,11 @@ export default function Work() {
   return (
     <div className="WorkContainer mt-7">
       <div clasName="workHeading">
-        <h4 id="my-work">selected work and skills</h4>
+        <h4>selected work and skills</h4>
       </div>
 
       <hr />
-      <div className="selectedWorkContainer">
+      <div className="selectedWorkContainer" id="my-work">
         <a
           href="https://frabjous-blancmange-32a015.netlify.app/"
           target="_blank"
