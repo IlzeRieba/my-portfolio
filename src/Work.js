@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Work() {
   return (
-    <div className="WorkContainer mt-7">
+    <div className="WorkContainer mt-6">
       <div clasName="workHeading">
         <h4>selected work and skills</h4>
       </div>
