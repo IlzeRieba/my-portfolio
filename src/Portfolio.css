@@ -113,6 +113,11 @@ p {
   padding-top: 15px;
 }
 
+.NavBarBrand {
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
 .NavBarStyling a {
   color: var(--primary-colour-black);
 }
