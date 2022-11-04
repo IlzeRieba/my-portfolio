@@ -7,13 +7,16 @@ export default function AnimCursor() {
         innerSize={10}
         outerSize={13}
         color="145, 141, 141"
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={5}
+        outerAlpha={0.3}
+        innerScale={0.9}
+        outerScale={6}
         outerStyle={{
-          border: "1px solid var(--primary-color-black)",
+          color: "var(--cursor-color)",
+          border: "var(--cursor-color)",
         }}
-    
+        innerStyle={{
+          backgroundColor: "var(--cursor-color)",
+        }}
         clickables={[
           "a",
           'input[type="text"]',

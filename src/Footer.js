@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="FooterContainer mt-7 mb-5">
+    <div className="FooterContainer mt-7 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4">

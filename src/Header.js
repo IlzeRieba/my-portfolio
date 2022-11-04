@@ -7,12 +7,12 @@ import Navbar from "react-bootstrap/Navbar";
 export default function Header() {
     return (
       <div className="NavBarStyling">
-        <Navbar expand="lg mt-3">
+        <Navbar expand="lg">
           <Container fluid>
             <Navbar.Brand className="NavBarBrand" href="#">
               Ilze Rieba
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
+    
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="nav-link me-auto my-2 my-lg-0"
