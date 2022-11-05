@@ -39,9 +39,10 @@ a:active {
 .Portfolio {
   background-color: var(--secondary-color-white);
   transition: all 0.5s;
-  padding-left: 60px;
   padding-right: 20px;
 }
+
+
 
 .Portfolio h1 {
   font-size: 136px;
@@ -97,6 +98,7 @@ p {
   font-weight: lighter;
   letter-spacing: 3px;
   text-decoration: none;
+  
 }
 
 .Portfolio small {
@@ -108,6 +110,9 @@ p {
   font-weight: lighter;
 }
 
+      
+    
+
 .NavBarStyling {
   font-family: var(--font-headings); 
   padding-top: 15px;
@@ -116,6 +121,7 @@ p {
 .NavBarBrand {
   text-transform: uppercase;
   padding-right: 20px;
+    padding-left: 60px;
 }
 
 .NavBarStyling a {
@@ -123,6 +129,18 @@ p {
 }
 .NavBarStyling a:hover {
   color: rgb(145, 141, 141);
+}
+
+.WorkContainer {
+  padding-left: 60px;
+}
+
+.WorkDivider {
+  color: var(--hyperlink-hover-color);
+}
+
+.HeroContainer {
+padding-left: 60px;
 }
 
 a {
@@ -153,7 +171,6 @@ a:active {
   float: right;
   color: var(--primary-colour-black);
 }
-
 
 .mt-6 {
   margin-top: 20rem;
@@ -217,4 +234,22 @@ a:active {
     padding-left: 5px;
     font-weight: lighter;
   }
+
+  .HeroContainer {
+padding-left: 20px;
+}
+
+.NavBarBrand {
+
+    padding-left: 20px;
+}
+
+.WorkContainer {
+  padding-left: 30px;
+}
+
+.AboutContainer {
+  padding-left: 20px;
+}
+
 }

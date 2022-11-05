@@ -7,7 +7,7 @@ export default function Work() {
         <h4>selected work and skills</h4>
       </div>
 
-      <hr />
+      <hr className="WorkDivider" />
       <div className="selectedWorkContainer" id="my-work">
         <a
           href="https://frabjous-blancmange-32a015.netlify.app/"
@@ -30,7 +30,7 @@ export default function Work() {
         </a>
       </div>
 
-      <hr />
+      <hr className="WorkDivider" />
       <div className="selectedWorkContainer ">
         <a
           href="https://jade-pegasus-9e9ab7.netlify.app/"
@@ -52,7 +52,7 @@ export default function Work() {
           </div>
         </a>
       </div>
-      <hr />
+      <hr className="WorkDivider" />
       <div className="selectedWorkContainer">
         <a
           href="https://sparkly-pothos-39a070.netlify.app/"
@@ -72,7 +72,7 @@ export default function Work() {
           </div>
         </a>
       </div>
-      <hr />
+      <hr className="WorkDivider" />
     </div>
   );
 }
