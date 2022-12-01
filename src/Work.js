@@ -4,7 +4,7 @@ export default function Work() {
   return (
     <div className="WorkContainer mt-6">
       <div clasName="workHeading">
-        <h4>selected work and skills</h4>
+        <h3>selected work and skills</h3>
       </div>
 
       <hr className="WorkDivider" />

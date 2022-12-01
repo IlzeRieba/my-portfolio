@@ -8,7 +8,7 @@ export default function Footer() {
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h4 id="get-in-touch"> get in touch </h4>
+            <h3 id="get-in-touch"> get in touch </h3>
           </div>
           <div class="col-2">
             <a

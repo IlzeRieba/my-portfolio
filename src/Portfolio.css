@@ -69,9 +69,10 @@ a:active {
 
 .Portfolio h3 {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 24px;
   color: var(--primary-colour-black);
   font-family: var(--font-main);
+  font-weight: lighter;
 }
 
 p {
@@ -81,12 +82,20 @@ p {
   font-size: 18px;
 }
 
+.aboutMeText {
+  font-weight: 400;
+  color: var(--primary-colour-black);
+}
+
+
 .Portfolio h4 {
+font-size: 24px;
   font-family: var(--font-main);
-  text-transform: small-caps;
-  font-size: 20px;
   color: var(--heading-color-light);
-  font-weight: lighter;
+  text-transform: lowercase;
+  font-weight: light;
+  text-transform: uppercase;
+  padding-left: 5px;
 
 }
 
@@ -102,9 +111,9 @@ p {
 }
 
 .Portfolio small {
-  font-size: 24px;
+  font-size: 36px;
   font-family: var(--font-main);
-  color: rgb(189, 184, 184);
+  color: var(--heading-color-light);
   font-style: italic;
   padding-left: 5px;
   font-weight: lighter;
@@ -148,6 +157,7 @@ a {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.699);
 }
+
 
 a:visited {
   text-decoration: none;
@@ -201,8 +211,8 @@ a:active {
 
 .textLink {
   text-decoration: none;
-  font-weight: 500;
-  color: var(--primary-colour-black);
+  font-weight: 700;
+  color: var(--heading-color-dark);
 }
 
 .textLink:hover {
@@ -234,6 +244,15 @@ a:active {
     padding-left: 5px;
     font-weight: lighter;
   }
+
+.Portfolio small {
+  font-size: 24px;
+  font-family: var(--font-main);
+  font-style: italic;
+  padding-left: 5px;
+  font-weight: lighter;
+   color: var(--heading-color-light);
+}
 
   .HeroContainer {
 padding-left: 20px;

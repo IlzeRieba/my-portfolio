@@ -9,7 +9,7 @@ export default function About() {
           <div class="col-lg-6">
             <h3 id="about-me-section">About me </h3>
             <div class="mt-4">
-              <p>
+              <p className="aboutMeText">
                 I learned to code with&nbsp;
                 <a
                   href="https://www.shecodes.io/graduates/14434-ilze-rieba"
@@ -41,7 +41,7 @@ export default function About() {
                 </a>
                 .
               </p>
-              <p>
+              <p className="aboutMeText">
                 When I don’t code, I am learning illustration and digital
                 animation, surf, draw, read books, play beach volleyball,
                 practice yoga and work as a part-time Fundraising and Operations
@@ -56,7 +56,7 @@ export default function About() {
                 </a>
               </p>
 
-              <p>
+              <p className="aboutMeText">
                 I have 15+ years of experience setting up and running
                 operational processes in small organisations, delivering complex
                 projects and managing events.
