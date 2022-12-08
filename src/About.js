@@ -42,8 +42,7 @@ export default function About() {
                 .
               </p>
               <p className="aboutMeText">
-                When I don’t code, I am learning illustration and digital
-                animation, surf, draw, read books, play beach volleyball,
+                When I don’t code, I am learning digital illustration and animation, surf, draw, read books, play beach volleyball,
                 practice yoga and work as a part-time Fundraising and Operations
                 Manager at the &nbsp;
                 <a

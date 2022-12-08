@@ -19,6 +19,7 @@
   --text-paragraph-color: white;
   --heading-color-light: rgb(223, 219, 219);
   --heading-color-darker: rgb(219, 216, 216);
+  --heading-color-dark: rgb(245, 243, 243);
   --hyperlink-color: white;
   --hyperlink-hover-color: rgb(145, 141, 141);
   --cursor-color: white;
@@ -69,10 +70,11 @@ a:active {
 
 .Portfolio h3 {
   text-transform: uppercase;
-  font-size: 24px;
-  color: var(--primary-colour-black);
-  font-family: var(--font-main);
-  font-weight: lighter;
+  font-size: 28px;
+  color: var(--heading-color-dark);
+  font-family: var(--font-headings);
+  font-weight: 500px;
+  letter-spacing: 1px;
 }
 
 p {
@@ -125,17 +127,20 @@ font-size: 24px;
 .NavBarStyling {
   font-family: var(--font-headings); 
   padding-top: 15px;
+  color: var(--primary-colour-black);
 }
 
 .NavBarBrand {
   text-transform: uppercase;
   padding-right: 20px;
     padding-left: 60px;
+    font: var(--font-main);
 }
 
 .NavBarStyling a {
   color: var(--primary-colour-black);
 }
+
 .NavBarStyling a:hover {
   color: rgb(145, 141, 141);
 }
@@ -171,6 +176,7 @@ a:hover {
 
 a:active {
   text-decoration: none;
+    color: var(--heading-color-light);
 }
 
 
@@ -201,11 +207,9 @@ a:active {
 }
 
 .contactLink {
-  text-decoration: none;
-  color: var(--text-paragraph-color);
-
+  color: var(--primary-colour-black);
   font-family: var(--font-headings);
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -224,6 +228,8 @@ a:active {
 .contactLink:hover {
   text-decoration: none;
   color: var(--hyperlink-hover-color);
+  
+  
 }
 
 @media (max-width: 900px) {
