@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Portfolio from './Portfolio';
 import useLocalStorage from "use-local-storage";
 import "./Portfolio.css";
@@ -6,7 +6,9 @@ import ReactGA from "react-ga";
 
 const TRACKING_ID = "UA-251521885-1";
 ReactGA.initialize(TRACKING_ID);
-ReactGA.pageview(window.location.pathname + window.location.search);
+
+useEffect(() => {ReactGA.pageview(window.location.pathname + window.location.search);
+}, []);
 
 function App() {
 const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
