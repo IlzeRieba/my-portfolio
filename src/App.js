@@ -6,6 +6,7 @@ import ReactGA from "react-ga";
 
 const TRACKING_ID = "UA-251521885-1";
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
