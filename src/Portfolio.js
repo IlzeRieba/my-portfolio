@@ -8,19 +8,13 @@ import "./Portfolio.css";
 import AnimCursor from "./components/AnimCursor";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
-
 export default function Portfolio() {
   return (
-      <div className="Portfolio">
-        <AnimCursor />
-        <Header />
-        <HeroTitle />
-        <Work />
-        <About />
-        <Footer />
-      </div>
-    );
-     
+    <div className="Portfolio">
+      <AnimCursor />
+      <HeroTitle />
+      <Work />
+      <About />
+    </div>
+  );
 }

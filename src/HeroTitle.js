@@ -2,12 +2,14 @@ import React from "react";
 
 export default function HeroTitle() {
   return (
-    <div className="HeroContainer mt-6">
+    <div className="HeroContainer">
       <div className="HeroContent">
-        <small>junior</small>
-        <h2 >Front-end</h2>
-        <h1>Developer</h1>
+        <div className="HeroHeadings">
+          <h2>TRAUMA INFORMED </h2>
+          <h1>hollistic counselling</h1>
+
+        </div>
       </div>
-    </div> 
+    </div>
   );
 }

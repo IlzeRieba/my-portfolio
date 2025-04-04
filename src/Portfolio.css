@@ -1,280 +1,102 @@
-:root {
-  --primary-colour-black: black;
-  --secondary-color-white: white;
-  --accent-color: rgb(145, 41, 76);
-  --text-paragraph-color: rgb(65, 65, 65);
-  --heading-color-light: rgb(145, 141, 141);
-  --heading-color-darker: rgb(65, 65, 65);
-  --hyperlink-color: rgba(0, 0, 0, 0.699);
-  --hyperlink-hover-color: grey;
-  --font-main: "M PLUS 1", sans-serif;
-  --font-headings: "Montserrat", sans-serif;
-  --cursor-color: rgb(145, 141, 141);
-}
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-[data-theme="dark"] {
-  --primary-colour-black: white;
-  --secondary-color-white: black;
-  --accent-color: rgb(145, 41, 76);
-  --text-paragraph-color: white;
-  --heading-color-light: rgb(223, 219, 219);
-  --heading-color-darker: rgb(219, 216, 216);
-  --heading-color-dark: rgb(245, 243, 243);
-  --hyperlink-color: white;
-  --hyperlink-hover-color: rgb(145, 141, 141);
-  --cursor-color: white;
-  --font-main: "M PLUS 1", sans-serif;
-  --font-headings: "Montserrat", sans-serif;
-    --cursor-color: white;
-}
-
-
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-}
-
-.Portfolio {
-  background-color: var(--secondary-color-white);
-  transition: all 0.5s;
-  padding-right: 20px;
-}
-
-
-
-.Portfolio h1 {
-  font-size: 136px;
-  font-family: var(--font-main);
-  color: var(--primary-colour-black);
-  text-transform: capitalize;
-  font-weight: bold;
-  line-height: 55pt;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-.Portfolio h2 {
-  font-size: 84px;
-  font-family: var(--font-main);
-  color: var(--primary-colour-black);
-  text-transform: capitalize;
-  font-weight: bold;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  line-height: 55pt;
-  padding-left: 5px;
-}
-
-.Portfolio h3 {
-  text-transform: uppercase;
-  font-size: 28px;
-  color: var(--heading-color-dark);
-  font-family: var(--font-headings);
-  font-weight: 500px;
-  letter-spacing: 1px;
-}
-
-p {
-  color: var(--text-paragraph-color);
-  font-family: var(--font-headings);
-  font-weight: lighter;
-  font-size: 18px;
-}
-
-.aboutMeText {
-  font-weight: 400;
-  color: var(--primary-colour-black);
-}
-
-
-.Portfolio h4 {
-font-size: 24px;
-  font-family: var(--font-main);
-  color: var(--heading-color-light);
-  text-transform: lowercase;
-  font-weight: light;
-  text-transform: uppercase;
-  padding-left: 5px;
-
-}
-
-.Portfolio h5 {
-  font-family: var(--font-headings);
-  text-transform: uppercase;
-  font-size: 36px;
-  color: var(--primary-colour-black);
-  font-weight: lighter;
-  letter-spacing: 3px;
-  text-decoration: none;
-  
-}
-
-.Portfolio small {
-  font-size: 36px;
-  font-family: var(--font-main);
-  color: var(--heading-color-light);
-  font-style: italic;
-  padding-left: 5px;
-  font-weight: lighter;
-}
-
-      
-    
-
-.NavBarStyling {
-  font-family: var(--font-headings); 
-  padding-top: 15px;
-  color: var(--primary-colour-black);
-}
-
-.NavBarBrand {
-  text-transform: uppercase;
-  padding-right: 20px;
-    padding-left: 60px;
-    font: var(--font-main);
-}
-
-.NavBarStyling a {
-  color: var(--primary-colour-black);
-}
-
-.NavBarStyling a:hover {
-  color: rgb(145, 141, 141);
-}
-
-.WorkContainer {
-  padding-left: 60px;
-}
-
-.WorkDivider {
-  color: var(--hyperlink-hover-color);
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .HeroContainer {
-padding-left: 60px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.699);
+.HeroContent h1 {
+  font-family: "Newsreader", serif;
+  font-size: 96px;
+  color: #3e4375;
+  text-align: center;
+  line-height: 75px;
+  padding-top: 20px;
 }
 
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: var(--hyperlink-hover-color);
-  font-weight: lighter;
-}
-
-a:active {
-  text-decoration: none;
-    color: var(--heading-color-light);
-}
-
-
-.themeToggle i {
-  font-size: 30px;
-  padding-top: 30px;
-  padding-right: 30px;
-  float: right;
-  color: var(--primary-colour-black);
-}
-
-.mt-6 {
-  margin-top: 20rem;
-}
-
-.mt-7 {
-  margin-top: 10rem;
-}
-
-.ProjectName {
-  text-decoration: none;
-}
-
-.projectYear {
-  text-align: right;
-  color: var(--primary-colour-black);
-  font-size: 42px;
-}
-
-.contactLink {
-  color: var(--primary-colour-black);
-  font-family: var(--font-headings);
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.textLink {
-  text-decoration: none;
-  font-weight: 700;
-  color: var(--heading-color-dark);
-}
-
-.textLink:hover {
-  text-decoration: none;
-  color: var(--hyperlink-hover-color);
-  font-weight: lighter;
-}
-
-.contactLink:hover {
-  text-decoration: none;
-  color: var(--hyperlink-hover-color);
-  
-  
-}
-
-@media (max-width: 900px) {
-  .Portfolio h1 {
-    font-size: 54px;
-    line-height: 45pt;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
-  .Portfolio h2 {
-    font-size: 42px;
-    text-transform: capitalize;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 26pt;
-    padding-left: 5px;
-    font-weight: lighter;
-  }
-
-.Portfolio small {
-  font-size: 24px;
-  font-family: var(--font-main);
-  font-style: italic;
-  padding-left: 5px;
-  font-weight: lighter;
-   color: var(--heading-color-light);
-}
-
-  .HeroContainer {
-padding-left: 20px;
-}
-
-.NavBarBrand {
-
-    padding-left: 20px;
+.HeroContent h2 {
+  font-family: "Newsreader", serif;
+  font-size: 32px;
+  color: #3e4375;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 100px;
+  line-height: 20px;
+  font-weight: 200;
 }
 
 .WorkContainer {
-  padding-left: 30px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #3e4375;
 }
 
-.AboutContainer {
-  padding-left: 20px;
+.aboutContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
 }
 
+.WorkContent h1.aboutWork {
+  text-align: left;
+  padding-left: 80px;
+  font-family: "Newsreader", serif;
+  font-size: 116px;
+  color: white;
+  line-height: 100px;
+}
+
+.WorkContent h1.aboutSessions {
+  text-align: left;
+  padding-left: 0px;
+  font-family: "Newsreader", serif;
+  font-size: 116px;
+  color: white;
+  line-height: 100px;
+}
+
+.WorkContent h1.aboutContact {
+  text-align: left;
+  padding-left: 60px;
+  font-family: "Newsreader", serif;
+  font-size: 116px;
+  color: white;
+  line-height: 100px;
+}
+
+.aboutContainer h1 {
+  font-family: "Newsreader", serif;
+  font-size: 96px;
+  color: #3e4375;
+  text-align: left;
+}
+
+.aboutContainer p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #3e4375;
+  text-align: left;
+  line-height: 30px;
+  width: 70%;
+  padding-top: 50px;
 }

@@ -19,7 +19,7 @@ export default function Header() {
                 style={{ maxHeight: "100px" }}
               >
                 <Nav.Link href="#about-me-section">about</Nav.Link>
-                <Nav.Link href="#my-work">my work</Nav.Link>
+                <Nav.Link href="#my-work">sessions</Nav.Link>
                 <Nav.Link href="#get-in-touch">contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
