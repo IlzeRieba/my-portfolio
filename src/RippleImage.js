@@ -11,6 +11,7 @@ const RippleShaderMaterial = {
     uTime: { value: 0 },
     uTexture: { value: null },
     uMouse: { value: new THREE.Vector2(0.5, 0.5) },
+    uHover: { value: 0 },
   },
   vertexShader: `
     varying vec2 vUv;
@@ -23,12 +24,13 @@ const RippleShaderMaterial = {
     uniform sampler2D uTexture;
     uniform float uTime;
     uniform vec2 uMouse;
+    uniform float uHover;
     varying vec2 vUv;
 
     void main() {
       vec2 uv = vUv;
       float dist = distance(uv, uMouse);
-      float ripple = 0.05 * sin(20.0 * dist - uTime * 2.5);
+float ripple = 0.02 * sin(40.0 * dist - uTime * 0.5) * uHover;
       uv += normalize(uv - uMouse) * ripple;
       gl_FragColor = texture2D(uTexture, uv);
     }
@@ -52,21 +54,27 @@ function RippleImageMesh({ imageUrl }) {
     };
   }, [imageUrl]);
 
-  useFrame(({ clock, mouse }) => {
-    if (materialRef.current) {
-      materialRef.current.uniforms.uTime.value = clock.getElapsedTime();
-      materialRef.current.uniforms.uMouse.value.set(
-        mouse.x * 0.5 + 0.5,
-        1.0 - (mouse.y * 0.5 + 0.5)
-      );
-    }
-  });
+ useFrame(({ clock, mouse, raycaster, camera }) => {
+   if (materialRef.current && meshRef.current) {
+     materialRef.current.uniforms.uTime.value = clock.getElapsedTime();
+     materialRef.current.uniforms.uMouse.value.set(
+       mouse.x * 0.5 + 0.5,
+       1.0 - (mouse.y * 0.5 + 0.5)
+     );
+
+     // Detect hover
+     const intersects = raycaster.intersectObject(meshRef.current);
+     materialRef.current.uniforms.uHover.value =
+       intersects.length > 0 ? 1.0 : 0.0;
+   }
+ });
 
   // scale based on screen dimensions
-  const scale =
-    aspect >= 1
-      ? [viewport.width, viewport.width / aspect, 1]
-      : [viewport.height * aspect, viewport.height, 1];
+const screenAspect = viewport.width / viewport.height;
+const scale =
+  aspect > screenAspect
+    ? [viewport.height * aspect, viewport.height, 1]
+    : [viewport.width, viewport.width / aspect, 1];
 
   return (
     <mesh ref={meshRef} scale={scale}>
@@ -92,12 +100,37 @@ export default function RippleImage({ imageUrl }) {
       }}
     >
       {/* Heading */}
-      <div className="headingLine1">trauma informed</div>
-
-      <div className="heading">SOMATIC COUNSELLING</div>
+      <div>
+        <div className="heading">ocean waves therapy</div>
+        <div className="subHeading">
+          Gentle therapy for deep wounds — held with care, guided by the body.
+        </div>
+        <p className="mainParagraph">
+          I’m a certified trauma-informed counsellor, offering a warm and
+          supportive space.I work in a way that’s guided by you, with deep
+          respect for your experiences and your pace.
+          <div>
+            <button className="mainButton">more</button>
+          </div>
+        </p>
+      </div>
 
       {/* Canvas */}
-      <Canvas orthographic camera={{ zoom: 100, position: [0, 0, 10] }}>
+
+      <Canvas
+        orthographic
+        camera={{ zoom: 0.005, position: [0, 0, 5] }}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          opacity: "90%",
+        }}
+        gl={{ alpha: true }}
+      >
+        {" "}
         <ambientLight intensity={1} />
         <RippleImageMesh imageUrl={imageUrl} />
       </Canvas>

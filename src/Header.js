@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import "./Portfolio.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import About from "./About"; 
+
 
 export default function Header() {
     return (
@@ -10,7 +12,7 @@ export default function Header() {
         <Navbar expand="lg">
           <Container fluid>
             <Navbar.Brand className="NavBarBrand" href="#">
-              Ilze Rieba
+             Ocean Waves
             </Navbar.Brand>
     
             <Navbar.Collapse id="navbarScroll">
@@ -19,7 +21,7 @@ export default function Header() {
                 style={{ maxHeight: "100px" }}
               >
                 <Nav.Link href="#about-me-section">about</Nav.Link>
-                <Nav.Link href="#my-work">sessions</Nav.Link>
+                <Nav.Link href="#my-work">wrok with me</Nav.Link>
                 <Nav.Link href="#get-in-touch">contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>

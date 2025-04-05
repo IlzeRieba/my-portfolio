@@ -1,29 +1,54 @@
 .heading {
   position: absolute;
-  top: 250px; /* Position from top of the screen */
-  left: 50%; /* Center the heading horizontally */
-  transform: translateX(-50%); /* Offset the center alignment */
-  font-family: "Newsreader", serif; /* Set the font-family */
-  font-size: 96px; /* Font size for the heading */
-  color: white; /* Set the text color */
-  text-align: center; /* Center the text */
-  line-height: 75px; /* Line height */
-  z-index: 1; /* Ensure it stays on top of the image */
-  white-space: nowrap; /* Prevent the text from wrapping to multiple lines */
+  top: 270px;  /* Position from top of the screen */
+  left: 50%;  /* Center the heading horizontally */
+  transform: translateX(-50%);  /* Offset the center alignment */
+  font-family: "Newsreader", serif;  /* Set the font-family */
+  font-size: 116px;  /* Font size for the heading */
+color:white;  /* Set the text color */
+  text-align: center;  /* Center the text */
+  line-height: 75px;  /* Line height */
+  z-index: 1;  /* Ensure it stays on top of the image */
+  white-space: nowrap;  /* Prevent the text from wrapping to multiple lines */
 }
 
-.headingLine1 {
+.subHeading {
+     position: absolute;
+  top: 360px; /* Adjust as needed — this places it right below the heading */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Newsreader", serif;
+  font-size: 32px;
+  color:white;
+  text-align: center;
+  line-height: 75px;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.mainParagraph {
   position: absolute;
-  top: 100px; /* Position from top of the screen */
-  left: 50%; /* Center the heading horizontally */
-  transform: translateX(-50%); /* Offset the center alignment */
-  font-family: "Newsreader", serif; /* Set the font-family */
-  font-size: 42px; /* Font size for the heading */
-  color: white; /* Set the text color */
-  text-align: center; /* Center the text */
-  line-height: 75px; /* Line height */
-  padding-top: 20px; /* Padding from the top */
-  z-index: 1; /* Ensure it stays on top of the image */
-  line-height: 20px;
-  font-weight: 200;
+  bottom: 50px;
+  right: 80px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color:white;
+  text-align: left;
+  max-width: 500px; /* Increased width */
+  line-height: 1.6;
+  z-index: 1;
+}
+
+.mainButton {
+  margin-top: 20px; /* space above the button */
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 100; /* makes it bolder */
+color:white;
+  text-decoration: underline; /* remove underline */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }

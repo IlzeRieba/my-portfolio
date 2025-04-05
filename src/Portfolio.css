@@ -7,105 +7,31 @@ html, body, #root, .Portfolio {
   height: 100%;
   overflow: hidden;
 }
-
-.HeroContainer {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
+.NavBarStyling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+  padding: 20px 40px;
 }
 
-.HeroContent h1 {
-  font-family: "Newsreader", serif;
-  font-size: 96px;
-  color: #3e4375;
-  text-align: center;
-  line-height: 75px;
-  padding-top: 20px;
+.NavBarBrand {
+  font-family: 'Newsreader', serif;
+  color: white !important;
+  font-size: 24px;
 }
 
-.HeroContent h2 {
-  font-family: "Newsreader", serif;
-  font-size: 32px;
-  color: #3e4375;
-  text-align: left;
-  padding-top: 80px;
-  padding-left: 100px;
-  line-height: 20px;
-  font-weight: 200;
+.navbar-nav {
+  margin-left: auto; /* pushes nav items to the right */
 }
 
-.WorkContainer {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: #3e4375;
+.nav-link {
+  color: white !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  margin-left: 20px;
+  font-size: 16px;
+  text-transform: lowercase;
 }
-
-.aboutContainer {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: white;
-}
-
-.WorkContent h1.aboutWork {
-  text-align: left;
-  padding-left: 80px;
-  font-family: "Newsreader", serif;
-  font-size: 116px;
-  color: white;
-  line-height: 100px;
-}
-
-.WorkContent h1.aboutSessions {
-  text-align: left;
-  padding-left: 0px;
-  font-family: "Newsreader", serif;
-  font-size: 116px;
-  color: white;
-  line-height: 100px;
-}
-
-.WorkContent h1.aboutContact {
-  text-align: left;
-  padding-left: 60px;
-  font-family: "Newsreader", serif;
-  font-size: 116px;
-  color: white;
-  line-height: 100px;
-}
-
-.aboutContainer h1 {
-  font-family: "Newsreader", serif;
-  font-size: 96px;
-  color: #3e4375;
-  text-align: left;
-}
-
-.aboutContainer p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  color: #3e4375;
-  text-align: left;
-  line-height: 30px;
-  width: 70%;
-  padding-top: 50px;
-}
-
-
-.ripple-background {
-  background-image: url('/Users/ilzerieba/Desktop/Coding/my-portfolio/public/IMG_1408.JPG');
-  background-size: cover;
-  background-position: center;
-}
-
-
