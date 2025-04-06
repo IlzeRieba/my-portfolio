@@ -1,0 +1,33 @@
+
+.rightOverlay {
+  background: rgba(255, 255, 255, 0.25); /* semi-transparent white */
+  padding: 30px;
+  border-radius: 8px;
+}
+
+
+.workTitle {
+  font-family: "Newsreader", serif;
+  font-size: 116px;
+  color: white;
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Newsreader", serif;
+  font-size: 32px;
+  color: #002A3C;
+  text-align: left;
+  line-height: 1.6;
+}
+
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #002A3C;
+  text-align: left;
+  line-height: 1.6;
+}

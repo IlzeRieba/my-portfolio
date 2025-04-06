@@ -1,0 +1,21 @@
+.aboutContainer {
+  padding-top: 180px;
+  padding-bottom: 60px;
+}
+
+.aboutTitle {
+  font-family: "Newsreader", serif;
+  font-size: 116px;
+  color: #002A3C;
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.aboutContainer p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #002A3C;
+  text-align: left;
+  line-height: 1.6;
+}

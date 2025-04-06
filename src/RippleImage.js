@@ -5,6 +5,7 @@ import { ShaderMaterial } from "three";
 import { TextureLoader } from "three";
 import { extend } from "@react-three/fiber";
 import "./RippleImage.css"; // Import the CSS file
+import { Link } from "react-router-dom";
 
 const RippleShaderMaterial = {
   uniforms: {
@@ -106,11 +107,13 @@ export default function RippleImage({ imageUrl }) {
           Gentle therapy for deep wounds — held with care, guided by the body.
         </div>
         <p className="mainParagraph">
-          I’m a certified trauma-informed counsellor, offering a warm and
+          I’m a certified trauma-informed therapist, offering a warm and
           supportive space.I work in a way that’s guided by you, with deep
           respect for your experiences and your pace.
           <div>
-            <button className="mainButton">more</button>
+            <Link to="/about">
+              <button className="mainButton">more</button>
+            </Link>
           </div>
         </p>
       </div>
@@ -126,7 +129,7 @@ export default function RippleImage({ imageUrl }) {
           left: 0,
           width: "100%",
           height: "100%",
-          opacity: "90%",
+          opacity: "70%",
         }}
         gl={{ alpha: true }}
       >

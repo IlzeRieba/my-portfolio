@@ -1,0 +1,44 @@
+.workHeading {
+    font-family: "Newsreader", serif;
+  font-size: 116px;
+  color: #002A3C;
+  position: relative;
+  z-index: 10;
+}
+
+h2 {
+  font-family: "Newsreader", serif;
+  font-size: 32px;
+  color: #002A3C;
+  text-align: left;
+  line-height: 1.6;
+}
+
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #002A3C;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.workButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #002A3C;
+  background-color: transparent;
+  border: 1.5px solid #002A3C;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.workButton:hover {
+  background-color: #002A3C;
+  color: white;
+  transform: translateY(-2px);
+}
+

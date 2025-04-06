@@ -1,16 +1,21 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AnimCursor from "./components/AnimCursor";
 import Portfolio from "./Portfolio";
-import "./Portfolio.css";
-import ReactGA from "react-ga";
-
-ReactGA.initialize("UA-251521885-1");
-ReactGA.pageview(window.location.pathname + window.location.search);
+import About from "./About";
+import Work from "./Work";
+import Contact from "./Contact";
 
 function App() {
   return (
-    <div className="App">
-      <Portfolio />
-    </div>
+    <Router>
+      <AnimCursor />
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
