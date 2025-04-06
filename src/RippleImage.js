@@ -107,9 +107,9 @@ export default function RippleImage({ imageUrl }) {
           Gentle therapy for deep wounds — held with care, guided by the body.
         </div>
         <p className="mainParagraph">
-          I’m a certified trauma-informed therapist, offering a warm and
-          supportive space.I work in a way that’s guided by you, with deep
-          respect for your experiences and your pace.
+          I’m a certified somatic therapist working in a holistic,
+          trauma-informed way—offering a warm, supportive space grounded in deep
+          empathy and gentle respect for your experience and pace.
           <div>
             <Link to="/about">
               <button className="mainButton">more</button>
