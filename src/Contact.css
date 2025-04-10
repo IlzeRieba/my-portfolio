@@ -1,12 +1,15 @@
-
+/* Default .rightOverlay Styling for Desktop */
 .rightOverlay {
   background: rgba(255, 255, 255, 0.25); /* semi-transparent white */
-  padding: 30px;
+  padding: 30px; /* Default padding for desktop */
   border-radius: 8px;
+  position: relative; /* Default position for desktop */
+  width: auto;
+  height: auto;
 }
 
-
-.workTitle {
+/* Title Styling */
+.contactTitle {
   font-family: "Newsreader", serif;
   font-size: 116px;
   color: white;
@@ -15,6 +18,7 @@
   margin-bottom: 20px;
 }
 
+/* h2 Styling */
 h2 {
   font-family: "Newsreader", serif;
   font-size: 32px;
@@ -23,11 +27,67 @@ h2 {
   line-height: 1.6;
 }
 
-
+/* Paragraph Styling */
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #002A3C;
   text-align: left;
   line-height: 1.6;
+}
+
+/* ----- Tablet Styles (768px to 1024px) ----- */
+@media (max-width: 1024px) {
+  .rightOverlay {
+    position: fixed; /* Fixed position to cover the screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    padding: 25px; /* Slightly less padding for tablet */
+    z-index: 100; /* Ensure it's on top of other content */
+  }
+
+  .contactTitle {
+    font-size: 80px; /* Smaller title font size for tablet */
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 28px; /* Slightly smaller h2 font size for tablet */
+  }
+
+  p {
+    font-size: 18px; /* Slightly larger text for readability */
+  }
+}
+
+/* ----- Mobile Styles (under 768px) ----- */
+@media (max-width: 767px) {
+  .rightOverlay {
+    position: fixed; /* Fixed position to cover the screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Reduced padding for mobile */
+    z-index: 100; /* Ensure it's on top of other content */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+  }
+
+  .contactTitle {
+    font-size: 60px; /* Much smaller font size for mobile */
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 24px; /* Smaller h2 font size for mobile */
+  }
+
+  p {
+    font-size: 14px; /* Smaller text size for mobile */
+    line-height: 1.4; /* Adjusted line-height for better readability */
+  }
 }

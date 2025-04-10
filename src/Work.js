@@ -44,9 +44,9 @@ export default function Work() {
               <div style={{ marginBottom: "50px" }}>
                 <h2>My approach</h2>
                 <p>
-                  I am a certified Trauma-Informed Somatic Counsellor. I offer a space
-                  where you can show up exactly as you are, with whatever you
-                  may be carrying. The pace and shape of our sessions will
+                  I am a certified Trauma-Informed Somatic Counsellor. I offer a
+                  space where you can show up exactly as you are, with whatever
+                  you may be carrying. The pace and shape of our sessions will
                   depend on you and where you’re at in your journey. We may
                   explore somatic practices if that feels comfortable for you,
                   or create space for more traditional talking therapy. I’m also

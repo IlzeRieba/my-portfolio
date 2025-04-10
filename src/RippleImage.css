@@ -1,10 +1,6 @@
-
-
 :root {
-  --main-color: white; /* Default color (white) */
+  --main-color: white;
 }
-
-
 
 .heading {
   position: absolute;
@@ -12,28 +8,32 @@
   left: 50%;
   transform: translateX(-50%);
   font-family: "Newsreader", serif;
-  font-size: 116px;
   color: var(--main-color);
   text-align: center;
-  line-height: 75px;
+  line-height: 1.1;
   z-index: 1;
+  display: flex;
+  gap: 12px;
   white-space: nowrap;
+  font-size: 96px;
 }
 
+/* Subheading styling */
 .subHeading {
   position: absolute;
   top: 360px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Newsreader", serif;
-  font-size: 32px;
+  font-size: 28px;
   color: var(--main-color);
   text-align: center;
-  line-height: 75px;
+  line-height: 1.4;
   z-index: 1;
   white-space: nowrap;
 }
 
+/* Main paragraph styling */
 .mainParagraph {
   position: absolute;
   bottom: 50px;
@@ -59,4 +59,40 @@
   border: none;
   cursor: pointer;
   padding: 0;
+}
+
+/* ----- MOBILE STYLES (under 768px) ----- */
+@media (max-width: 767px) {
+  .heading {
+    flex-direction: column;
+    font-size: unset;
+    gap: 0;
+    white-space: normal;
+    flex-wrap: nowrap; /* Prevent line wrapping */
+    align-items: center; /* Center align the text */
+  }
+
+  .heading .line1 {
+    font-size: 84px; /* Increase the font size of line 1 */
+    white-space: nowrap; /* Prevent line break */
+  }
+
+  .heading .line2 {
+    font-size: 116px; /* Keep line 2 size smaller */
+    white-space: nowrap; /* Prevent line break */
+    letter-spacing: 8px;
+    line-height: 72px;
+    
+  }
+
+  .subHeading {
+    display: none;
+  }
+
+  .mainParagraph {
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    max-width: 90%;
+  }
 }

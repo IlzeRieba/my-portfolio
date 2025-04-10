@@ -4,13 +4,13 @@ import "./Contact.css";
 import { Container, Row, Col } from "react-bootstrap";
 
 
-export default function Work() {
+export default function Contact() {
   return (
     <>
       <Header darkText />
 
       <div
-        id="work-section"
+        id="contact-section"
         style={{
           backgroundImage: `url('/water33.jpg')`,
           backgroundSize: "cover",
@@ -28,7 +28,7 @@ export default function Work() {
                   paddingLeft: "60px",
                 }}
               >
-                <h1 className="workTitle">CONTACT</h1>
+                <h1 className="contactTitle">CONTACT</h1>
               </div>
             </Col>
 

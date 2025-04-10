@@ -1,8 +1,10 @@
+/* Default About Container Styling */
 .aboutContainer {
   padding-top: 180px;
   padding-bottom: 60px;
 }
 
+/* About Title Styling */
 .aboutTitle {
   font-family: "Newsreader", serif;
   font-size: 116px;
@@ -10,12 +12,63 @@
   text-align: left;
   line-height: 1.1;
   margin-bottom: 20px;
+  
 }
 
+/* About Container Paragraph Styling */
 .aboutContainer p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #002A3C;
   text-align: left;
   line-height: 1.6;
+}
+
+/* ----- Tablet Styles (768px to 1024px) ----- */
+@media (max-width: 1024px) {
+  .aboutContainer {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+  }
+
+  .aboutTitle {
+    font-size: 80px; /* Smaller font size for tablet */
+    margin-bottom: 15px;
+  }
+
+  .aboutContainer p {
+    font-size: 14px; /* Slightly larger text for better readability */
+  }
+}
+
+/* ----- Mobile Styles (under 768px) ----- */
+@media (max-width: 767px) {
+  .aboutContainer {
+    padding-top: 120px; /* Reduced top padding for smaller screens */
+    padding-bottom: 30px; /* Reduced bottom padding */
+  }
+
+  .aboutTitle {
+    font-size: 80px; /* Much smaller font size for mobile */
+    margin-bottom: 10px; /* Adjusted margin for mobile */
+ 
+  }
+
+  .aboutContainer p {
+    font-size: 14px; /* Smaller text for mobile */
+    line-height: 1.4; /* Adjusted line-height for better readability */
+  }
+}
+
+/* Mobile and Tablet Responsiveness for About Section */
+@media only screen and (max-width: 768px) {
+  .aboutTitle {
+    font-size: 60px; /* Adjust font size for mobile */
+    margin-bottom: 10px;
+  }
+
+  .aboutContainer p {
+    font-size: 14px; /* Adjust paragraph font size for mobile */
+  }
 }

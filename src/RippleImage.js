@@ -102,7 +102,11 @@ export default function RippleImage({ imageUrl }) {
     >
       {/* Heading */}
       <div>
-        <div className="heading">ocean waves therapy</div>
+        <div className="heading">
+          <span className="line1">ocean waves</span>
+          <span className="line2">therapy</span>
+        </div>
+
         <div className="subHeading">
           Gentle therapy for deep wounds — held with care, guided by the body.
         </div>
