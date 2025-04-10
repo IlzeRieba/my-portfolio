@@ -73,15 +73,15 @@
   }
 
   .heading .line1 {
-    font-size: 84px; /* Increase the font size of line 1 */
+    font-size: 64px; /* Increase the font size of line 1 */
     white-space: nowrap; /* Prevent line break */
   }
 
   .heading .line2 {
-    font-size: 116px; /* Keep line 2 size smaller */
+    font-size: 86px; /* Keep line 2 size smaller */
     white-space: nowrap; /* Prevent line break */
     letter-spacing: 8px;
-    line-height: 72px;
+    line-height: 54px;
     
   }
 
@@ -95,4 +95,8 @@
     font-size: 16px;
     max-width: 90%;
   }
+}
+
+.mainButton {
+  font-size: 14px;
 }

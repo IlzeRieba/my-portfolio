@@ -42,46 +42,46 @@ p {
   transform: translateY(-2px);
 }
 
-/* Media Queries for responsiveness */
+/* ---------- Responsive Styles ---------- */
 
-/* Tablet (768px and up) */
-@media only screen and (max-width: 768px) {
+/* Tablet: 768px and below */
+@media only screen and (max-width: 1024px) {
   .workHeading {
-    font-size: 80px; /* Reduce the font size for tablets */
+    font-size: 60px;
   }
 
   h2 {
-    font-size: 28px; /* Adjust h2 font size */
+    font-size: 28px;
   }
 
   p {
-    font-size: 14px; /* Adjust paragraph font size */
+    font-size: 14px;
   }
 
   .workButton {
     padding: 10px 20px;
-    font-size: 14px; /* Adjust button size */
+    font-size: 14px;
   }
 }
-
-/* Mobile (480px and up) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   .workHeading {
-    font-size: 10px; /* Reduce the font size even more for mobile */
+    font-size: 60px;
+    line-height: 1.1;
+
   }
 
   h2 {
-    font-size: 24px; /* Adjust h2 font size for mobile */
+    font-size: 24px;
   }
 
   p {
-    font-size: 12px; /* Adjust paragraph font size for mobile */
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   .workButton {
     padding: 8px 16px;
-    font-size: 12px; /* Adjust button size */
-    border-radius: 25px; /* Reduce border radius for mobile */
+    font-size: 12px;
+    border-radius: 25px;
   }
 }
-
