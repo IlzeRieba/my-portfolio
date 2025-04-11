@@ -7,41 +7,20 @@ import { Link } from "react-router-dom";
 export default function Work() {
   return (
     <>
+      {/* Header with dark text */}
       <Header darkText />
 
-      <div
-        id="work-section"
-        style={{
-          backgroundColor: "#fff",
-          minHeight: "100vh",
-        }}
-      >
-        <Container fluid className="p-0">
-          <Row className="g-0" style={{ minHeight: "100vh" }}>
+      <div id="work-section" className="workContainer">
+        <Container>
+          <Row className="pt-5 align-items-start">
             {/* LEFT COLUMN */}
-            <Col
-              md={5}
-              style={{
-                backgroundColor: "white",
-                paddingTop: "190px",
-                paddingLeft: "60px",
-              }}
-            >
-              <h1 className="workHeading">SESSIONS</h1>
+            <Col md={6}>
+              <h1 className="workTitle">SESSIONS</h1>
             </Col>
 
             {/* RIGHT COLUMN */}
-            <Col
-              md={7}
-              style={{
-                backgroundColor: "white",
-                paddingTop: "190px",
-                paddingRight: "60px",
-                paddingLeft: "60px",
-                paddingBottom: "60px",
-              }}
-            >
-              <div style={{ marginBottom: "50px" }}>
+            <Col md={6} className="rightCol">
+              <div className="sectionBlock">
                 <h2>My approach</h2>
                 <p>
                   I am a certified Trauma-Informed Somatic Counsellor. I offer a
@@ -59,7 +38,7 @@ export default function Work() {
                 </p>
               </div>
 
-              <div style={{ marginBottom: "50px" }}>
+              <div className="sectionBlock">
                 <h2>What to expect</h2>
                 <p>
                   We would begin with an initial 30-minute consultation call,
@@ -68,11 +47,11 @@ export default function Work() {
                   then schedule regular sessions. How often and when we meet
                   will depend on your availability and resources. I'm happy to
                   explore this during our consultation and find a rhythm that
-                  feels right for you.{" "}
+                  feels right for you.
                 </p>
               </div>
 
-              <div style={{ marginBottom: "50px" }}>
+              <div className="sectionBlock">
                 <h2>Online sessions</h2>
                 <p>
                   At the moment, I offer sessions online only — either via Zoom
@@ -84,7 +63,7 @@ export default function Work() {
                 </p>
               </div>
 
-              <div style={{ marginBottom: "50px" }}>
+              <div className="sectionBlock">
                 <h2>Price</h2>
                 <p>
                   The standard rate for a 60-minute session is £60. However, I
@@ -92,10 +71,10 @@ export default function Work() {
                   the full rate isn’t accessible to you, please don’t hesitate
                   to reach out — I’m happy to offer a discounted rate.
                   Similarly, if you're in a position to contribute a little
-                  more, that’s also warmly welcomed.{" "}
+                  more, that’s also warmly welcomed.
                 </p>
 
-                <div style={{ marginTop: "50px" }}>
+                <div className="ctaButtonWrapper">
                   <Link to="/contact">
                     <button className="workButton">get in touch</button>
                   </Link>
