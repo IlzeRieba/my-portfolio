@@ -4,8 +4,9 @@ import * as THREE from "three";
 import { ShaderMaterial } from "three";
 import { TextureLoader } from "three";
 import { extend } from "@react-three/fiber";
-import "./RippleImage.css"; // Import the CSS file
+import "./RippleImage.css";
 import { Link } from "react-router-dom";
+import Header from "./Header"; // 
 
 const RippleShaderMaterial = {
   uniforms: {
@@ -31,7 +32,7 @@ const RippleShaderMaterial = {
     void main() {
       vec2 uv = vUv;
       float dist = distance(uv, uMouse);
-float ripple = 0.02 * sin(40.0 * dist - uTime * 0.5) * uHover;
+      float ripple = 0.02 * sin(40.0 * dist - uTime * 0.5) * uHover;
       uv += normalize(uv - uMouse) * ripple;
       gl_FragColor = texture2D(uTexture, uv);
     }
@@ -50,32 +51,28 @@ function RippleImageMesh({ imageUrl }) {
   useEffect(() => {
     const img = new Image();
     img.src = imageUrl;
-    img.onload = () => {
-      setAspect(img.width / img.height);
-    };
+    img.onload = () => setAspect(img.width / img.height);
   }, [imageUrl]);
 
- useFrame(({ clock, mouse, raycaster, camera }) => {
-   if (materialRef.current && meshRef.current) {
-     materialRef.current.uniforms.uTime.value = clock.getElapsedTime();
-     materialRef.current.uniforms.uMouse.value.set(
-       mouse.x * 0.5 + 0.5,
-       1.0 - (mouse.y * 0.5 + 0.5)
-     );
+  useFrame(({ clock, mouse, raycaster }) => {
+    if (materialRef.current && meshRef.current) {
+      materialRef.current.uniforms.uTime.value = clock.getElapsedTime();
+      materialRef.current.uniforms.uMouse.value.set(
+        mouse.x * 0.5 + 0.5,
+        1.0 - (mouse.y * 0.5 + 0.5)
+      );
 
-     // Detect hover
-     const intersects = raycaster.intersectObject(meshRef.current);
-     materialRef.current.uniforms.uHover.value =
-       intersects.length > 0 ? 1.0 : 0.0;
-   }
- });
+      const intersects = raycaster.intersectObject(meshRef.current);
+      materialRef.current.uniforms.uHover.value =
+        intersects.length > 0 ? 1.0 : 0.0;
+    }
+  });
 
-  // scale based on screen dimensions
-const screenAspect = viewport.width / viewport.height;
-const scale =
-  aspect > screenAspect
-    ? [viewport.height * aspect, viewport.height, 1]
-    : [viewport.width, viewport.width / aspect, 1];
+  const screenAspect = viewport.width / viewport.height;
+  const scale =
+    aspect > screenAspect
+      ? [viewport.height * aspect, viewport.height, 1]
+      : [viewport.width, viewport.width / aspect, 1];
 
   return (
     <mesh ref={meshRef} scale={scale}>
@@ -92,16 +89,32 @@ const scale =
 
 export default function RippleImage({ imageUrl }) {
   return (
-    <div
-      style={{
-        position: "relative",
-        width: "100vw",
-        height: "100vh",
-        overflow: "hidden",
-      }}
-    >
-      {/* Heading */}
-      <div>
+    <div className="HeroSection">
+      {/* 🧭 Absolute Navbar over the ripple */}
+      <Header darkText={false} />
+
+      {/* 🌊 Ripple canvas */}
+      <Canvas
+        orthographic
+        camera={{ zoom: 0.005, position: [0, 0, 5] }}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          opacity: "70%",
+              zIndex: 0, // 👈 important
+
+        }}
+        gl={{ alpha: true }}
+      >
+        <ambientLight intensity={1} />
+        <RippleImageMesh imageUrl={imageUrl} />
+      </Canvas>
+
+      {/* 🧾 Heading + Description */}
+      <div className="heroContent">
         <div className="heading">
           <span className="line1">ocean waves</span>
           <span className="line2">therapy</span>
@@ -121,26 +134,6 @@ export default function RippleImage({ imageUrl }) {
           </div>
         </p>
       </div>
-
-      {/* Canvas */}
-
-      <Canvas
-        orthographic
-        camera={{ zoom: 0.005, position: [0, 0, 5] }}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          opacity: "70%",
-        }}
-        gl={{ alpha: true }}
-      >
-        {" "}
-        <ambientLight intensity={1} />
-        <RippleImageMesh imageUrl={imageUrl} />
-      </Canvas>
     </div>
   );
 }

@@ -26,10 +26,15 @@
 .rightOverlay {
   background-color: rgba(255, 255, 255, 0.65);
   padding: 190px 60px 60px 60px;
+    z-index: 0; /* already fine */
+
 }
 
 .contactIntro {
   margin-bottom: 50px;
+    padding-left: 30px;
+    padding-top: 50px;
+
 }
 
 .contactInfo {
@@ -66,6 +71,11 @@ p {
   color: #002A3C;
   text-align: left;
   line-height: 1.6;
+}
+
+
+#contact-header {
+  background-color: transparent !important; 
 }
 
 /* Tablet Styles */

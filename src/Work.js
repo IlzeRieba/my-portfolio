@@ -33,15 +33,14 @@ export default function Work() {
                   processing, and other integrative techniques, which we may
                   bring in depending on what feels supportive for you. Our
                   relationship and the trust we build together are central to my
-                  therapeutic approach. I usually work on a long-term, regular
-                  basis, though we can always discuss what feels right for you.
+                  therapeutic approach.
                 </p>
               </div>
 
               <div className="sectionBlock">
                 <h2>What to expect</h2>
                 <p>
-                  We would begin with an initial 30-minute consultation call,
+                  We would begin with an initial free 30-minute consultation call,
                   where we can get to know each other and see if we’re a good
                   fit to work together. If we decide to move forward, we can
                   then schedule regular sessions. How often and when we meet

@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-/* === Base Layout === */
 html,
 body,
-#root,
-.Portfolio {
+#root {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -13,15 +11,33 @@ body,
   overflow-y: auto;
 }
 
-/* === Navbar === */
+/* === Hero Section === */
+.HeroSection {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* === Navbar Styling === */
 .NavBarStyling {
-  position: fixed;
+  position: relative !important; /* NOT fixed or sticky */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
-  background: transparent;
+  z-index: 9999 !important; /* stays above overlays/backgrounds */
+  background: transparent !important;
   pointer-events: auto;
+}
+
+.navbar-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.navbar-scrolled {
+  background-color: white !important;
 }
 
 .NavBarBrand {
@@ -31,9 +47,9 @@ body,
 }
 
 .navbar-nav {
-  margin-left: auto; /* keeps nav items aligned to right */
+  margin-left: auto;
   text-align: right;
-  width: auto; /* <-- Fixes large screen layout */
+  width: auto;
 }
 
 .navbar-nav .nav-item {
@@ -45,30 +61,25 @@ body,
   font-weight: 500;
   font-size: 16px;
   text-transform: lowercase;
-  padding: 0 30px; /* ✅ adds 30px on both left and right */
+  padding: 0 30px;
   color: white !important;
   text-align: right;
   transition: color 0.3s ease;
 }
 
-
-/* === Hover state for light mode (default) === */
 .nav-link:hover {
   color: #002a3c !important;
 }
 
-/* === Hover state for dark mode === */
 .dark-text .nav-link:hover {
   color: #3f7a94 !important;
 }
 
-/* === Dark theme override === */
 .dark-text .nav-link,
 .dark-text .navbar-brand .nav-link {
   color: #002a3c !important;
 }
 
-/* === Toggle Button (Wave Icon) === */
 .svg-wave-toggle {
   background: none;
   border: none;
@@ -83,14 +94,12 @@ body,
   height: 30px;
 }
 
-/* Prevent default Bootstrap toggle border and shadow */
 .navbar-toggler {
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
 }
 
-/* === Wave Path Styling + Animation === */
 .wave-path {
   stroke-width: 2;
   fill: none;
@@ -102,11 +111,11 @@ body,
 }
 
 .svg-wave-toggle.dark .wave-path {
-  stroke: #002A3C;
+  stroke: #002a3c;
 }
 
 .navbar-toggler[aria-expanded="true"] .wave-path {
-  stroke: #002A3C;
+  stroke: #002a3c;
 }
 
 .navbar-toggler.dark[aria-expanded="true"] .wave-path {
@@ -123,19 +132,4 @@ body,
   100% {
     stroke-dashoffset: -200;
   }
-}
-
-
-/* === Sticky only on Hero Section === */
-.NavBarStyling {
-  position: relative;
-}
-
-.NavBarStyling.sticky-on-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background: transparent;
 }

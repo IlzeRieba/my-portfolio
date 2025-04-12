@@ -1,31 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
-import "./Portfolio.css";
+import "./Portfolio.css"; 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
-export default function Header({ darkText }) {
-  const [stickyOnHero, setStickyOnHero] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const hero = document.querySelector(".HeroSection");
-      const heroHeight = hero?.offsetHeight || 600;
-      setStickyOnHero(window.scrollY < heroHeight - 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+export default function Header({ darkText, className, id }) {
   return (
     <div
-      className={`NavBarStyling ${stickyOnHero ? "sticky-on-hero" : ""} ${
-        darkText ? "dark-text" : ""
+      className={`NavBarStyling ${darkText ? "dark-text" : ""} ${
+        className || ""
       }`}
     >
-      <Navbar expand="lg" collapseOnSelect>
+      <Navbar
+        expand="lg"
+        collapseOnSelect
+        fixed="top"
+        className="navbar-transparent"
+      >
         <Container fluid>
           <Navbar.Brand className="NavBarBrand">
             <Link to="/" className="nav-link">

@@ -30,6 +30,7 @@ export default function AnimCursor() {
         "button",
         ".link",
       ]}
+      touch={true} // This ensures the cursor will follow touch input on mobile and tablet
     />
   );
 }
