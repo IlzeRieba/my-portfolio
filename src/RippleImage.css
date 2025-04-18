@@ -61,6 +61,35 @@
   padding: 0;
 }
 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading {
+    font-size: 84px;
+    white-space: nowrap;
+    top: 240px;
+  }
+
+  
+  .subHeading {
+    font-size: 24px;
+    top: 320px;
+    line-height: 50px;
+  }
+
+  .mainParagraph {
+    font-size: 18px;
+    bottom: 30px;
+    right: 40px;
+    max-width: 90%;
+  }
+
+  .mainButton {
+    font-size: 16px;
+  }
+}
+
+
+
 /* ----- MOBILE STYLES (under 768px) ----- */
 @media (max-width: 767px) {
   .heading {
@@ -73,7 +102,7 @@
   }
 
   .heading .line1 {
-    font-size: 64px; /* Increase the font size of line 1 */
+    font-size: 74px; /* Increase the font size of line 1 */
     white-space: nowrap; /* Prevent line break */
   }
 

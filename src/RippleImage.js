@@ -104,8 +104,7 @@ export default function RippleImage({ imageUrl }) {
           width: "100%",
           height: "100%",
           opacity: "70%",
-              zIndex: 0, // 👈 important
-
+          zIndex: 0, // 👈 important
         }}
         gl={{ alpha: true }}
       >
@@ -124,9 +123,10 @@ export default function RippleImage({ imageUrl }) {
           Gentle therapy for deep wounds — held with care, guided by the body.
         </div>
         <p className="mainParagraph">
-          I’m a certified somatic therapist working in a holistic,
-          trauma-informed way—offering a warm, supportive space grounded in deep
-          empathy and gentle respect for your experience and pace.
+          I’m a certified somatic therapist offering a holistic, trauma-informed
+          approach. In our work together, you’ll find a warm, supportive space
+          grounded in deep empathy, gentleness, and care for your unique
+          experience and rhythm.
           <div>
             <Link to="/about">
               <button className="mainButton">more</button>

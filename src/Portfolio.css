@@ -32,12 +32,12 @@ body,
 
 .navbar-transparent {
   background-color: transparent !important;
-  transition: background-color 0.3s ease;
-  z-index: 9999;
+
 }
 
 .navbar-scrolled {
-  background-color: white !important;
+  background-color: transparent !important;
+  box-shadow: none !important; /* if it adds one */
 }
 
 .NavBarBrand {

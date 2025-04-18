@@ -36,10 +36,12 @@ export default function About() {
               </p>
               <p>
                 Throughout my life, I’ve struggled with depression and the deep,
-                lasting impact of trauma. I’ve been fortunate to walk the path
-                of healing—sometimes supported by loved ones or caring
-                strangers, and often entirely alone. I’ve never truly felt seen
-                or heard; it’s a wound I still carry and continue to work with.
+                lasting impact of trauma. I’ve been going through my own
+                healing—sometimes supported by loved ones or caring strangers,
+                and at other times, alone. I’ve rarely felt truly seen or heard;
+                it’s a wound I still carry and continue to work with. It’s also
+                something I hope to offer through my work as a therapist—a space
+                where you can feel genuinely met in your experience.
               </p>
               <img
                 src="/profile.png"
@@ -58,20 +60,21 @@ export default function About() {
               <p>
                 I trained as a Trauma-Informed Somatic Counsellor at the
                 International School of Holistic Healing, accredited by the
-                ACCPH. I’m also a certified Yoga Teacher. I bring together these
-                tools and my personal experiences to create a warm, gentle, and
-                welcoming space for our work together.
+                ACCPH (Accredited Counsellors, Coaches, Psychotherapists and
+                Hypnotherapists). I’m also a certified Yoga Teacher. I bring
+                together these tools and my personal experiences to create a
+                warm, gentle, and welcoming space for our work together.
               </p>
               <p>
-                When I’m not surfing, I work as Head of Operations and
-                Fundraising for a wonderful charity, the Stuart Hall Foundation.
-                I’m also developing a creative practice that weaves together
-                illustration, design, and coding. 
-                </p>
-                <p>
-                You can read more about my
-                therapeutic approach <Link to="/work">here</Link>. If you’re interested in
-                working with me, please don’t hesitate to reach out.
+                When I’m not surfing, I work as Head of
+                Fundraising and Operations for a wonderful charity, the Stuart Hall Foundation.
+                I’m also building a creative practice that weaves together
+                illustration, design, and coding.
+              </p>
+              <p>
+                You can read more about my therapeutic approach{" "}
+                <Link to="/work">here</Link>. If you’re interested in working
+                with me, please don’t hesitate to reach out.
               </p>
               <div style={{ marginTop: "50px" }}>
                 <Link to="/contact">
