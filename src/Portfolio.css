@@ -21,25 +21,38 @@ body,
 
 /* === Navbar Styling === */
 .NavBarStyling {
-  position: relative !important; /* NOT fixed or sticky */
+  position: relative !important;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999 !important; /* stays above overlays/backgrounds */
   background: transparent !important;
   pointer-events: auto;
+  transition: background-color 0.3s ease; /* Add smooth transition */
 }
 
 .navbar-transparent {
   background-color: transparent !important;
-
 }
 
-.navbar-scrolled {
-  background-color: transparent !important;
-  box-shadow: none !important; /* if it adds one */
+/* === Navbar Scroll Behavior === */
+/* Apply white background with 80% opacity when scrolled */
+.navbar-white-bg-scrolled {
+  background-color: rgba(255, 255, 255, 0.8) !important; /* White background with 80% opacity */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Optional: add a subtle shadow */
 }
 
+/* Change text and wave path colors when scrolled */
+.navbar-white-bg-scrolled .nav-link,
+.navbar-white-bg-scrolled .NavBarBrand {
+  color: #002a3c !important; /* Dark color for text when scrolled */
+}
+
+.navbar-white-bg-scrolled .wave-path {
+  stroke: #002a3c; /* Change wave stroke color when scrolled */
+}
+
+/* === Navbar Links and Other Elements === */
 .NavBarBrand {
   font-family: "Open Sans", sans-serif;
   color: white !important;
@@ -132,4 +145,24 @@ body,
   100% {
     stroke-dashoffset: -200;
   }
+}
+
+/* === Navbar Scroll + Toggle Behavior === */
+.custom-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* Apply white background with 30% opacity when menu is toggled */
+.navbar-white-bg-toggled {
+  background-color: rgba(255, 255, 255, 0.3) !important; /* 30% opacity when toggled */
+}
+
+.navbar-white-bg-toggled .nav-link,
+.navbar-white-bg-toggled .NavBarBrand {
+  color: #002a3c !important;
+}
+
+.navbar-white-bg-toggled .wave-path {
+  stroke: #002a3c;
 }

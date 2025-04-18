@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
-import "./Portfolio.css"; 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import "./Portfolio.css";
 
-export default function Header({ darkText, className, id }) {
+export default function Header({ darkText, className }) {
+  const [scrolled, setScrolled] = useState(false);
+  const [navExpanded, setNavExpanded] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 3) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleToggle = (expanded) => {
+    setNavExpanded(expanded);
+  };
+
+  const showWhiteBg = scrolled || navExpanded;
+
   return (
     <div
       className={`NavBarStyling ${darkText ? "dark-text" : ""} ${
@@ -16,7 +41,11 @@ export default function Header({ darkText, className, id }) {
         expand="lg"
         collapseOnSelect
         fixed="top"
-        className="navbar-transparent"
+        expanded={navExpanded}
+        onToggle={handleToggle}
+        className={`custom-navbar ${
+          scrolled && !navExpanded ? "navbar-white-bg-scrolled" : "" // Apply scroll opacity when scrolling
+        } ${navExpanded ? "navbar-white-bg-toggled" : ""}`}
       >
         <Container fluid>
           <Navbar.Brand className="NavBarBrand">
@@ -27,8 +56,9 @@ export default function Header({ darkText, className, id }) {
 
           <Navbar.Toggle
             aria-controls="navbarScroll"
-            as="button"
-            className={`svg-wave-toggle ${darkText ? "dark" : ""}`}
+            className={`svg-wave-toggle ${
+              darkText || showWhiteBg ? "dark" : ""
+            }`}
           >
             <svg
               width="30"

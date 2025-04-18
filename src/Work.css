@@ -65,7 +65,7 @@
   .workContainer {
     padding-top: 150px;
     padding-bottom: 50px;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-right: 20px;
   }
 
@@ -75,6 +75,7 @@
   .workTitle {
     font-size: 70px; 
     margin-bottom: 15px;
+
   }
 
 .workContainer h2 {
