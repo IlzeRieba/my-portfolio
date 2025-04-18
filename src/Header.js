@@ -11,6 +11,7 @@ export default function Header({ darkText, className }) {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Check if we are scrolled more than 3px from the top of the page
       if (window.scrollY > 3) {
         setScrolled(true);
       } else {
@@ -20,6 +21,7 @@ export default function Header({ darkText, className }) {
 
     window.addEventListener("scroll", handleScroll);
 
+    // Cleanup the event listener when the component is unmounted
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -29,7 +31,7 @@ export default function Header({ darkText, className }) {
     setNavExpanded(expanded);
   };
 
-  const showWhiteBg = scrolled || navExpanded;
+  const showWhiteBg = scrolled || navExpanded; // Apply white background when scrolled or toggled
 
   return (
     <div
@@ -44,7 +46,7 @@ export default function Header({ darkText, className }) {
         expanded={navExpanded}
         onToggle={handleToggle}
         className={`custom-navbar ${
-          scrolled && !navExpanded ? "navbar-white-bg-scrolled" : "" // Apply scroll opacity when scrolling
+          showWhiteBg ? "navbar-white-bg-scrolled" : ""
         } ${navExpanded ? "navbar-white-bg-toggled" : ""}`}
       >
         <Container fluid>
