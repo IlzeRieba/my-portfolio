@@ -6,7 +6,12 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Contact() {
   return (
     <>
-      <Header darkText className="contact-header" id="contact-header" />
+      <Header
+        darkText
+        isFixed={true}
+         className="contact-header"
+        id="contact-header"
+      />
 
       <div
         id="contact-section"

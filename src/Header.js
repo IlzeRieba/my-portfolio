@@ -5,13 +5,12 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import "./Portfolio.css";
 
-export default function Header({ darkText, className }) {
+export default function Header({ darkText, className, isFixed = false }) {
   const [scrolled, setScrolled] = useState(false);
   const [navExpanded, setNavExpanded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if we are scrolled more than 3px from the top of the page
       if (window.scrollY > 3) {
         setScrolled(true);
       } else {
@@ -21,7 +20,6 @@ export default function Header({ darkText, className }) {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener when the component is unmounted
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -37,12 +35,12 @@ export default function Header({ darkText, className }) {
     <div
       className={`NavBarStyling ${darkText ? "dark-text" : ""} ${
         className || ""
-      }`}
+      } ${isFixed ? "fixed-header" : ""}`}
     >
       <Navbar
         expand="lg"
         collapseOnSelect
-        fixed="top"
+        fixed={isFixed ? "top" : undefined}
         expanded={navExpanded}
         onToggle={handleToggle}
         className={`custom-navbar ${
