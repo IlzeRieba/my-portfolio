@@ -32,11 +32,12 @@ body,
 /* Apply white background with 80% opacity when scrolled */
 .navbar-white-bg-scrolled {
   background-color: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Apply white background with 30% opacity when toggled */
 .navbar-white-bg-toggled {
-  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 /* Change text and wave path colors when scrolled or toggled */
