@@ -23,7 +23,9 @@ export default function Contact() {
             {/* LEFT COLUMN with heading */}
             <Col md={6}>
               <div className="leftColumn">
-                <h1 className="contactTitle">CONTACT</h1>
+                <h1 id="contactTitle" className="contactTitle">
+                  CONTACT
+                </h1>
               </div>
             </Col>
 
