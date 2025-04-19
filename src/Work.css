@@ -12,6 +12,7 @@
   text-align: left;
   line-height: 1.1;
   margin-bottom: 20px;
+  
 }
 
 .workContainer h2 {
@@ -55,8 +56,9 @@
   margin-top: 50px;
 }
 
-/* ----- Tablet Styles (768px to 1024px) ----- */
-@media (min-width: 768px) and (max-width: 1024px) {
+
+/* ----- Tablet Styles (768px to 1026px) ----- */
+@media (max-width: 1024px) {
   .workContainer {
     padding-top: 150px;
     padding-bottom: 50px;
@@ -64,59 +66,38 @@
     padding-right: 20px;
   }
 
-  #sessionsTitle {
-    font-size: 60px; 
-    margin-bottom: 40px; /* Reduced margin to avoid text being too far down */
+
+#sessionsTitle {
+    font-size: 50px; 
+    margin-bottom: 100px;
+
   }
 
-  .workContainer h2 {
-    font-size: 28px;
-  }
+.workContainer h2 {
+
+  font-size: 28px;
+
+}
 
   .workContainer p {
-    font-size: 16px;
+    font-size: 16px; 
   }
 
-  .workButton {
+   .workButton {
     padding: 10px 20px;
     font-size: 14px;
   }
-}
-
-/* ----- iPad Pro Specific Styles (1024px to 1366px) ----- */
-@media (min-width: 1025px) and (max-width: 1366px) {
-  .workContainer {
-    padding-top: 160px; /* Slight adjustment for larger tablets */
-    padding-bottom: 60px;
-  }
-
-  #sessionsTitle {
-    font-size: 80px; /* Larger font size for iPad Pro */
-    margin-bottom: 50px;
-  }
-
-  .workContainer h2 {
-    font-size: 30px;
-  }
-
-  .workContainer p {
-    font-size: 18px; /* Adjusted paragraph font size */
-  }
-
-  .workButton {
-    padding: 12px 24px;
-    font-size: 16px;
-  }
+  
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 767px) {
-  .workTitle {
+#sessionsTitle {
     font-size: 60px; 
     margin-bottom: 150px;
   }
 
-  h2 {
+    h2 {
     font-size: 24px;
     padding-top: 30px;
   }
@@ -131,4 +112,5 @@
     font-size: 12px;
     border-radius: 25px;
   }
+
 }
