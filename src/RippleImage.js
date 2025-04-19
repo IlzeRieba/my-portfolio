@@ -120,7 +120,7 @@ export default function RippleImage({ imageUrl }) {
         </div>
 
         <div className="subHeading">
-          Gentle therapy for deep wounds — held with care, guided by the body.
+          Gentle therapy for deep wounds - held with care, guided by the body.
         </div>
         <p className="mainParagraph">
           I’m a certified somatic therapist offering a holistic, trauma-informed

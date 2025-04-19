@@ -55,7 +55,7 @@ export default function Work() {
               <div className="sectionBlock">
                 <h2>Online sessions</h2>
                 <p>
-                  At the moment, I offer sessions online only — either via Zoom
+                  At the moment, I offer sessions online only - either via Zoom
                   or WhatsApp call, depending on what works best for you. Each
                   session lasts 60 minutes. I typically work on a long-term,
                   regular basis, as building a trusting relationship is central
@@ -70,7 +70,7 @@ export default function Work() {
                   The standard rate for a 60-minute session is £60. However, I
                   offer a sliding scale. If you feel drawn to work together but
                   the full rate isn’t accessible to you, please don’t hesitate
-                  to reach out — I’m happy to offer a discounted rate.
+                  to reach out - I’m happy to offer a discounted rate.
                   Similarly, if you're in a position to contribute a little
                   more, that’s also warmly welcomed.
                 </p>

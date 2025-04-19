@@ -1,26 +1,23 @@
-/* Default About Container Styling */
 .aboutContainer {
   padding-top: 180px;
   padding-bottom: 60px;
 }
 
-/* About Title Styling */
 .aboutTitle {
   font-family: "Newsreader", serif;
-  font-size: 116px;
+  font-size: 96px;
   color: #002A3C;
   text-align: left;
-  line-height: 1.1;
   
 }
 
-/* About Container Paragraph Styling */
 .aboutContainer p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #002A3C;
   text-align: left;
   line-height: 1.6;
+   padding-bottom: 5px;
 }
 
 /* ----- Tablet Styles (768px to 1024px) ----- */
@@ -34,15 +31,33 @@
 
   .aboutTitle {
     font-size: 70px; 
-    margin-bottom: 15px;
+ margin-bottom: 10px; 
   }
 
   .aboutContainer p {
     font-size: 16px; 
+    padding-bottom: 5px;
   }
 }
 
-/* ----- Mobile Styles (under 768px) ----- */
+
+/* Mobile and Tablet Responsiveness for About Section */
+@media only screen and (max-width: 768px) {
+  .aboutTitle {
+    font-size: 70px; 
+    margin-bottom: 150px;
+    
+  }
+
+  .aboutContainer p {
+    font-size: 16px; 
+    line-height: 1.5;
+     padding-bottom: 0px;
+  }
+}
+
+
+/* ----- Mobile Styles (under 767px) ----- */
 @media (max-width: 767px) {
   .aboutContainer {
   padding-top: 60px;
@@ -51,35 +66,18 @@
     padding-right: 20px;}
 
   .aboutTitle {
-  padding-top: 120px;
-  font-size: 90px;
-}
-
-  .aboutTitle {
-    font-size: 80px; 
-    margin-bottom: 10px; 
- 
+     padding-top: 120px;
+    font-size: 70px; 
+    margin-bottom: 150px; 
   }
 
   .aboutContainer p {
     font-size: 16px; 
    line-height: 1.5;
+     padding-bottom: 0px;
   }
 }
 
-/* Mobile and Tablet Responsiveness for About Section */
-@media only screen and (max-width: 768px) {
-  .aboutTitle {
-    font-size: 50px; 
-    margin-bottom: 150px;
-    
-  }
-
-  .aboutContainer p {
-    font-size: 16px; 
-    line-height: 1.5;
-  }
-}
 
 
 

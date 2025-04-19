@@ -4,7 +4,6 @@ import "./About.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
 export default function About() {
   return (
     <>
@@ -24,12 +23,12 @@ export default function About() {
               <p>
                 My name is Ilze Rieba. I’m originally from Latvia, but I’ve been
                 living abroad since I was 19. I spent my first ten years away in
-                London, but in 2018 I left the city—it had become a lonely and
+                London, but in 2018 I left the city - it had become a lonely and
                 intensely hard place to be. With little savings and no clear
                 plan, I found myself in a small fisherman’s village in Portugal,
                 where I stayed for the next four years. It was there that I
                 realised how important it is for me to be close to
-                nature—especially the ocean. I began surfing and found a way to
+                nature - especially the ocean. I began surfing and found a way to
                 work remotely so I could stay near the water. Water has always
                 been deeply meaningful to me, and I’ve come to understand that
                 simply being near it is essential for my wellbeing.
@@ -37,21 +36,21 @@ export default function About() {
               <p>
                 Throughout my life, I’ve struggled with depression and the deep,
                 lasting impact of trauma. I’ve been going through my own
-                healing—sometimes supported by loved ones or caring strangers,
+                healing - sometimes supported by loved ones or caring strangers,
                 and at other times, alone. I’ve rarely felt truly seen or heard;
                 it’s a wound I still carry and continue to work with. It’s also
-                something I hope to offer through my work as a therapist—a space
+                something I hope to offer through my work as a therapist - a space
                 where you can feel genuinely met in your experience.
               </p>
               <img
                 src="/profile.png"
-                alt="Counsellor"
+                alt="Therapist standing and smiling in front of the camera, outdoors"
                 className="img-fluid rounded my-4"
               />
               <p>
                 Ocean Waves Therapy was born out of my love for water and my
                 wish to offer a space where others, too, can feel seen, heard,
-                and accepted—just as they are. Through my own lived experience
+                and accepted - just as they are. Through my own lived experience
                 and by nature, I am an attentive and empathetic listener. I
                 offer a space where you can show up exactly as you are, with
                 whatever you may be carrying.
@@ -66,8 +65,8 @@ export default function About() {
                 warm, gentle, and welcoming space for our work together.
               </p>
               <p>
-                When I’m not surfing, I work as Head of
-                Fundraising and Operations for a wonderful charity, the Stuart Hall Foundation.
+                When I’m not surfing, I work as Head of Fundraising and
+                Operations for a wonderful charity, the Stuart Hall Foundation.
                 I’m also building a creative practice that weaves together
                 illustration, design, and coding.
               </p>

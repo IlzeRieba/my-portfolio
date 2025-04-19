@@ -1,16 +1,13 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-
-/* Default About Container Styling */
 .workContainer {
   padding-top: 180px;
   padding-bottom: 60px;
 }
 
-/* About Title Styling */
+
 .workTitle {
   font-family: "Newsreader", serif;
-  font-size: 116px;
+  font-size: 96px;
   color: #002A3C;
   text-align: left;
   line-height: 1.1;
@@ -27,7 +24,7 @@
   padding-bottom: 15px;
 }
 
-/* About Container Paragraph Styling */
+
 .workContainer p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -59,3 +56,109 @@
 .ctaButtonWrapper {
   margin-top: 50px;
 }
+
+  /* Your iPad Pro-specific styles here */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+
+.workTitle {
+  
+  font-size: 70px;
+}
+
+}
+
+
+/* ----- Tablet Styles (768px to 1024px) ----- */
+@media (max-width: 1024px) {
+  
+
+.workContainer {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.workTitle {
+ font-size: 60px; 
+ margin-bottom: 10px; 
+}
+
+.workContainer h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+}
+
+
+.workContainer p {
+  font-size: 16px; 
+    padding-bottom: 5px;
+}
+
+
+
+}
+
+
+/* Mobile and Tablet Responsiveness for About Section */
+@media only screen and (max-width: 768px) {
+  
+.workTitle {
+  font-size: 60px; 
+    margin-bottom: 150px;
+  
+}
+
+.workContainer h2 {
+   font-size: 30px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+}
+
+
+.workContainer p {
+    font-size: 16px; 
+    line-height: 1.5;
+     padding-bottom: 20px;
+}
+
+ 
+}
+
+
+/* ----- Mobile Styles (under 767px) ----- */
+@media (max-width: 767px) {
+  
+.workContainer {
+  padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+
+.workTitle {
+  padding-top: 120px;
+    font-size: 60px; 
+    margin-bottom: 150px; 
+  
+}
+
+.workContainer h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+
+.workContainer p {
+   font-size: 16px; 
+   line-height: 1.5;
+    
+}
+
+
+}
+
+
