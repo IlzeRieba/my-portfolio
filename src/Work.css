@@ -1,0 +1,61 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/* Default About Container Styling */
+.workContainer {
+  padding-top: 180px;
+  padding-bottom: 60px;
+}
+
+/* About Title Styling */
+.workTitle {
+  font-family: "Newsreader", serif;
+  font-size: 116px;
+  color: #002A3C;
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  
+}
+
+.workContainer h2 {
+  font-family: "Newsreader", serif;
+  font-size: 32px;
+  color: #002a3c;
+  text-align: left;
+  line-height: 1.6;
+  padding-bottom: 15px;
+}
+
+/* About Container Paragraph Styling */
+.workContainer p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #002A3C;
+  text-align: left;
+  line-height: 1.6;
+  padding-bottom: 30px;
+}
+
+.workButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #002a3c;
+  background-color: transparent;
+  border: 1.5px solid #002a3c;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.workButton:hover {
+  background-color: #002a3c;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ctaButtonWrapper {
+  margin-top: 50px;
+}
