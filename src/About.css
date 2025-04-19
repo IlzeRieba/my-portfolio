@@ -71,7 +71,7 @@
 /* Mobile and Tablet Responsiveness for About Section */
 @media only screen and (max-width: 768px) {
   .aboutTitle {
-    font-size: 70px; 
+    font-size: 50px; 
     margin-bottom: 150px;
     
   }

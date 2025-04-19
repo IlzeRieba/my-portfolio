@@ -79,7 +79,7 @@ p {
 }
 
 /* Tablet Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1026px) {
   .rightOverlay {
     position: absolute; /* Make sure it's behind */
     top: 0;
@@ -95,13 +95,8 @@ p {
     background-color: rgba(255, 255, 255, 0.65);
   }
 
-  .leftColumn {
-  padding-left: 20px;
-}
-
-
   .contactTitle {
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 15px;
     position: relative; /* Add relative positioning */
     z-index: 2; /* Bring it in front of the overlay */
@@ -115,6 +110,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+     padding-top: 70px;
   }
 
  .contactItem {
@@ -129,7 +125,7 @@ p {
 
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .rightOverlay {
     position: absolute; /* Make sure it's behind */
     top: 0;
@@ -147,7 +143,7 @@ p {
  .contactTitle {
     position: relative; /* Add relative positioning */
     z-index: 2; /* Bring it in front of the overlay */
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 20px;
     color: #002A3C;
@@ -157,6 +153,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+    padding-top: 50px;
   }
 
   .contactItem {

@@ -15,7 +15,9 @@ export default function Work() {
           <Row className="pt-5 align-items-start">
             {/* LEFT COLUMN */}
             <Col md={6}>
-              <h1 className="workTitle">SESSIONS</h1>
+              <h1 id="sessionsTitle" className="workTitle">
+                SESSIONS
+              </h1>
             </Col>
 
             {/* RIGHT COLUMN */}
@@ -40,10 +42,10 @@ export default function Work() {
               <div className="sectionBlock">
                 <h2>What to expect</h2>
                 <p>
-                  We would begin with an initial free 30-minute consultation call,
-                  where we can get to know each other and see if we’re a good
-                  fit to work together. If we decide to move forward, we can
-                  then schedule regular sessions. How often and when we meet
+                  We would begin with an initial free 30-minute consultation
+                  call, where we can get to know each other and see if we’re a
+                  good fit to work together. If we decide to move forward, we
+                  can then schedule regular sessions. How often and when we meet
                   will depend on your availability and resources. I'm happy to
                   explore this during our consultation and find a rhythm that
                   feels right for you.

@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-/* Default About Container Styling */
 .workContainer {
   padding-top: 180px;
   padding-bottom: 60px;
 }
 
-/* About Title Styling */
-.workTitle {
+#sessionsTitle {
   font-family: "Newsreader", serif;
   font-size: 116px;
   color: #002A3C;
@@ -26,7 +24,6 @@
   padding-bottom: 15px;
 }
 
-/* About Container Paragraph Styling */
 .workContainer p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -60,7 +57,7 @@
 }
 
 
-/* ----- Tablet Styles (768px to 1024px) ----- */
+/* ----- Tablet Styles (768px to 1026px) ----- */
 @media (max-width: 1024px) {
   .workContainer {
     padding-top: 150px;
@@ -70,11 +67,9 @@
   }
 
 
-
-
-  .workTitle {
-    font-size: 70px; 
-    margin-bottom: 15px;
+#sessionsTitle {
+    font-size: 50px; 
+    margin-bottom: 100px;
 
   }
 
@@ -95,32 +90,11 @@
   
 }
 
-/* ----- Mobile Styles (under 768px) ----- */
+/* Mobile Responsiveness */
 @media (max-width: 767px) {
-  .workContainer {
-  padding-top: 60px;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 20px;}
-
-  .workTitle {
-  padding-top: 120px;
-  font-size: 90px;
-}
-
-
-  .workContainer p {
-    font-size: 16px; 
-   line-height: 1.5;
-  }
-}
-
-/* Mobile and Tablet Responsiveness */
-@media only screen and (max-width: 768px) {
-  .workTitle {
-    font-size: 70px; 
+.workTitle {
+    font-size: 60px; 
     margin-bottom: 150px;
-    
   }
 
     h2 {

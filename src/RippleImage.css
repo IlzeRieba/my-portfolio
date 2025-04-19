@@ -104,7 +104,7 @@
   }
 
   .heading .line1 {
-    font-size: 74px; /* Increase the font size of line 1 */
+    font-size: 64px; /* Increase the font size of line 1 */
     white-space: nowrap; /* Prevent line break */
   }
 
@@ -123,8 +123,10 @@
   .mainParagraph {
     bottom: 20px;
     right: 20px;
+    padding-top: 50px;
     font-size: 16px;
     max-width: 90%;
+
   }
 }
 
