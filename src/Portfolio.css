@@ -37,7 +37,7 @@ body,
 
 /* Apply white background with 30% opacity when toggled */
 .navbar-white-bg-toggled {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Change text and wave path colors when scrolled or toggled */
