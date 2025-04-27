@@ -2,20 +2,26 @@ import React from "react";
 import AnimatedCursor from "react-animated-cursor";
 
 export default function AnimCursor() {
+  const isMobile = window.innerWidth <= 768; // or use a more precise mobile detection
+
+  if (isMobile) {
+    return null; // Don't render anything on mobile
+  }
+
   return (
     <AnimatedCursor
       innerSize={15}
       outerSize={40}
-      color="0, 42, 60" // RGB for #002A3C
+      color="0, 42, 60"
       outerAlpha={0.2}
       innerScale={0.9}
       outerScale={3}
       outerStyle={{
-        backgroundColor: "rgba(0, 42, 60, 0.15)", // Translucent outer circle
+        backgroundColor: "rgba(0, 42, 60, 0.15)",
         border: "none",
       }}
       innerStyle={{
-        backgroundColor: "#33596E", // Slightly lighter than #002A3C
+        backgroundColor: "#33596E",
       }}
       clickables={[
         "a",
@@ -30,7 +36,6 @@ export default function AnimCursor() {
         "button",
         ".link",
       ]}
-      touch={true} // This ensures the cursor will follow touch input on mobile and tablet
     />
   );
 }
