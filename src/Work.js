@@ -23,24 +23,36 @@ export default function Work() {
             {/* RIGHT COLUMN */}
             <Col md={6} className="rightCol">
               <div className="sectionBlock">
-                <h2>My approach</h2>
+                <h2>How somatic therapy works</h2>
                 <p>
-                  I am a certified Trauma-Informed Somatic Counsellor. I offer a
-                  space where you can show up exactly as you are, with whatever
-                  you may be carrying. The pace and shape of our sessions will
-                  depend on you and where you’re at in your journey. We may
-                  explore somatic practices if that feels comfortable for you,
-                  or create space for more traditional talking therapy. I’m also
-                  trained in parts work, bilateral processing, somatic
-                  processing, and other integrative techniques, which we may
-                  bring in depending on what feels supportive for you. Our
-                  relationship and the trust we build together are central to my
-                  therapeutic approach.
+                  Somatic therapy is a gentle, holistic approach that connects
+                  the mind, body, and emotions. It’s a gradual process that
+                  honours your body’s wisdom and moves at a pace that feels
+                  right for you. Together, we’ll learn to tune into the body’s
+                  sensations and explore the emotions and experiences it may
+                  quietly hold. We’ll begin by establishing a sense of safety
+                  within yourself while also getting to know how your nervous
+                  system responds to stress, and how to support yourself in
+                  those moments. As a sense of stability grows, we’ll gently
+                  explore memories, emotions, and patterns from the past,
+                  noticing how they may still shape your present. Alongside
+                  healing old wounds, we’ll also create space for joy,
+                  connection, and the unfolding of the person you’ve always been
+                  beneath it all.
+                  <br />
+                  <br />
+                  I’m a certified Trauma-Informed Somatic Counsellor trained in
+                  parts work, bilateral processing, somatic processing, and
+                  other integrative techniques, which we can bring into our work
+                  depending on what feels most supportive for you. I offer a
+                  space where you can come exactly as you are, with whatever you
+                  may be carrying. The relationship we build and the trust we
+                  create together are central to this work.
                 </p>
               </div>
 
               <div className="sectionBlock">
-                <h2>What to expect</h2>
+                <h2>Online sessions</h2>
                 <p>
                   We would begin with an initial free 30-minute consultation
                   call, where we can get to know each other and see if we’re a
@@ -49,12 +61,8 @@ export default function Work() {
                   will depend on your availability and resources. I'm happy to
                   explore this during our consultation and find a rhythm that
                   feels right for you.
-                </p>
-              </div>
-
-              <div className="sectionBlock">
-                <h2>Online sessions</h2>
-                <p>
+                  <br />
+                  <br />
                   At the moment, I offer sessions online only - either via Zoom
                   or WhatsApp call, depending on what works best for you. Each
                   session lasts 60 minutes. I typically work on a long-term,
