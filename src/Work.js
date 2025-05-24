@@ -40,14 +40,19 @@ export default function Work() {
                   connection, and the unfolding of the person you’ve always been
                   beneath it all.
                   <br />
-                  <br />
-                  I’m a certified Trauma-Informed Somatic Counsellor trained in
-                  parts work, bilateral processing, somatic processing, and
-                  other integrative techniques, which we can bring into our work
-                  depending on what feels most supportive for you. I offer a
-                  space where you can come exactly as you are, with whatever you
-                  may be carrying. The relationship we build and the trust we
-                  create together are central to this work.
+                  <br />I trained as a Trauma-Informed Somatic Counsellor at the
+                  International School of Holistic Healing,
+                  drawing on approaches such as parts work (inspired by Internal
+                  Family Systems), somatic processing (attuning to bodily
+                  sensations to gently process stored emotions and trauma), and
+                  bilateral stimulation techniques informed by EMDR principles.
+                  I’m also a certified yoga teacher and have completed an 8-week
+                  Mindfulness-Based Stress Reduction (MBSR) course. I bring
+                  together these tools—and my own lived experience—to offer
+                  therapy that is gentle, attuned, and collaborative. I offer a space where you can come exactly as you
+                  are, with whatever you may be carrying. The relationship we
+                  build and the trust we create together are central to this
+                  work.
                 </p>
               </div>
 
