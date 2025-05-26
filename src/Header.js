@@ -49,8 +49,17 @@ export default function Header({ darkText, className, isFixed = false }) {
       >
         <Container fluid>
           <Navbar.Brand className="NavBarBrand">
-            <Link to="/" className="nav-link">
-              Ocean Waves
+            <Link
+              to="/"
+              className={`nav-link logo-link ${
+                darkText || showWhiteBg ? "dark" : ""
+              }`}
+            >
+              <img
+                src={darkText || showWhiteBg ? "/logo11d.svg" : "/logo11.svg"}
+                alt="Ocean Waves logo"
+                height="75"
+              />
             </Link>
           </Navbar.Brand>
 

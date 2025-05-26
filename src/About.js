@@ -43,7 +43,7 @@ export default function About() {
                 where you can feel genuinely met in your experience.
               </p>
               <img
-                src="/profile.png"
+                src="/profile1.png"
                 alt="Therapist standing and smiling in front of the camera, outdoors"
                 className="img-fluid rounded my-4"
               />
