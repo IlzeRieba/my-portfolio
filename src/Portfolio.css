@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 html,
 body,
@@ -36,7 +37,7 @@ body,
 
 /* Apply white background with opacity when toggled */
 .navbar-white-bg-toggled {
-  background-color: rgba(255, 255, 255, 0.30) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 /* Change text and wave path colors when scrolled or toggled */
@@ -147,7 +148,6 @@ body,
   }
 }
 
-
 /* Base transition effect for logo */
 .logo-link img {
   transition: filter 0.3s ease, opacity 0.3s ease;
@@ -160,7 +160,8 @@ body,
 
 /* Hover styles: simulate #002a3c navy tone */
 .logo-link:hover img {
-  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(160deg) brightness(90%);
+  filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(160deg)
+    brightness(90%);
 }
 
 /* When dark mode active: show dark logo */
@@ -174,4 +175,10 @@ body,
 }
 .logo-link img {
   cursor: default;
+}
+
+.NavBarBrand .logo-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px; /* Optional for a more airy look */
 }

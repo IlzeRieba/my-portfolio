@@ -55,11 +55,7 @@ export default function Header({ darkText, className, isFixed = false }) {
                 darkText || showWhiteBg ? "dark" : ""
               }`}
             >
-              <img
-                src={darkText || showWhiteBg ? "/logo11d.svg" : "/logo11.svg"}
-                alt="Ocean Waves logo"
-                height="75"
-              />
+             Ocean Waves Therapy
             </Link>
           </Navbar.Brand>
 
