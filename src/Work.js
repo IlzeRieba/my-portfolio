@@ -96,7 +96,7 @@ export default function Work() {
                         </ul>
                         I’m also a certified yoga teacher and have completed an
                         8-week Mindfulness-Based Stress Reduction (MBSR) course.
-                        <br />I integrate these tools — along with my own lived
+                        <br />I integrate these tools - along with my own lived
                         experience — to provide therapy that is gentle, attuned,
                         and collaborative. The trust we build together is
                         central to this work.
