@@ -237,9 +237,9 @@ export default function Work() {
                       {surfOpen ? "Show less" : "Read more"}
                     </Button>
 
-                    <Link to="/contact">
-                      <Button id="scheduleSurfButton">Book a Session</Button>
-                    </Link>
+                    <Button id="scheduleSurfButton" as={Link} to="/contact">
+                      Book a Session
+                    </Button>
                   </div>
                 </div>
               </Col>
