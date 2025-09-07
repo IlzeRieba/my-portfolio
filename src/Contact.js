@@ -9,7 +9,7 @@ export default function Contact() {
       <Header
         darkText
         isFixed={true}
-         className="contact-header"
+        className="contact-header"
         id="contact-header"
       />
 
@@ -58,7 +58,29 @@ export default function Contact() {
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
-                  <a href="mailto:rieba.ilze@gmail.com">ilze@oceanwaves-therapy.com  </a>
+                  <a href="mailto:rieba.ilze@gmail.com">
+                    ilze@oceanwaves-therapy.com{" "}
+                  </a>
+                </div>
+
+                {/* Instagram Contact */}
+                <div className="contactItem">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="#002A3C"
+                  >
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm9.75 2.25a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5.5 2a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5z" />
+                  </svg>
+                  <a
+                    href="https://instagram.com/oceanwaves.therapy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Follow Me on Instagram
+                  </a>
                 </div>
 
                 {/* WhatsApp Contact */}
