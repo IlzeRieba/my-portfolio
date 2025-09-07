@@ -166,6 +166,30 @@
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
+
+#surftherapyButton {
+
+  margin-top: 20px;
+  padding: 12px 24px;                  
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;                       
+  background-color: #002a3c;       
+  border: 1.5px solid white;         
+  border-radius: 30px;                 
+  cursor: pointer;                 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#surftherapyButton:hover {
+
+   background-color: white;    
+  color: #002a3c;               
+  transform: translateY(-2px); 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
 #scheduleButton:hover
  {
    background-color: #002a3c;    
@@ -177,7 +201,7 @@
 }
 
 #scheduleSurfButton {
-  margin-top: px;
+  margin-top: 20px;
   margin-left: 10px;
   padding: 12px 24px;                  
   font-size: 16px;
