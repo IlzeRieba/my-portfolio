@@ -171,7 +171,7 @@
    background-color: #002a3c;    
   color: #FAEBAA;               
   transform: translateY(-2px); 
-  border: 1.5px solid #FAEBAA;    
+  border: 1.5px solid #002a3c;    
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 
 }
