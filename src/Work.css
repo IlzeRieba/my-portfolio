@@ -259,7 +259,7 @@
    background-color: white;    /* background turns dark blue */
   color: #002a3c;               /* text becomes white */
   transform: translateY(-2px); /* slight lift effect */
-  border: 1.5px solid #002a3c;   
+  border: 1.5px solid white;   
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 
 }
