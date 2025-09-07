@@ -120,15 +120,16 @@ export default function RippleImage({ imageUrl }) {
         </div>
 
         <div className="subHeading">
-          Gentle therapy for deep wounds - held with care, guided by the body.
+       One to One
+          Counselling 〜 Surf Therapy{" "}
         </div>
         <p className="mainParagraph">
-          I’m a certified somatic therapist offering a holistic, trauma-informed
-          approach. In our work together, you’ll find a warm, supportive space
-          grounded in deep empathy, gentleness, and care for your unique
-          experience and rhythm.
+          I’m a certified somatic therapist offering one-to-one online
+          counselling, as well as a surf therapy sessions working with both
+          individuals and groups. My approach is gentle and supportive, creating
+          space for connection and healing.
           <div>
-            <Link to="/about">
+            <Link to="/work">
               <button className="mainButton">more</button>
             </Link>
           </div>
